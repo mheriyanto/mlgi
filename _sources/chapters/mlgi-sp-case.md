@@ -16,32 +16,28 @@ kernelspec:
 
 # Kasus Self Potential (SP)
 
-The purpose of this repository is to reconstruct paper from Y. Kim and N. Nakata (The Leading Edge, Volume 37, Issue 12, Dec 2018) about [Geophysical inversion versus machine learning in inverse problems](https://library.seg.org/doi/10.1190/tle37120894.1) and B. Russel (The Leading Edge, Volume 38, Issue 7, Jul 2019) about [Machine learning and geophysical inversion — A numerical study](https://library.seg.org/doi/10.1190/tle38070512.1). We construct this paper using **Python** and **PyCharm IDE**.
+The purpose of this repository is to reconstruct paper from Y. Kim and N. Nakata (The Leading Edge, Volume 37, Issue 12, Dec 2018) about [Geophysical inversion versus machine learning in inverse problems](https://library.seg.org/doi/10.1190/tle37120894.1) and B. Russel (The Leading Edge, Volume 38, Issue 7, Jul 2019) about [Machine learning and geophysical inversion — A numerical study](https://library.seg.org/doi/10.1190/tle38070512.1).
 
 Reference: Inversion of Self Potential Anomalies with Multilayer Perceptron Neural Networks [Ilknur Kaftan et. al, 2014, Pure Appl. Geophys](https://link.springer.com/article/10.1007/s00024-014-0778-y)
-Syntethic data was created from sphere model (using [fwd_sp.py](../scripts/fwd_sp.py)) with parameters K = 94,686, h = 41.81 m, alpha = 309.37, dan x0 = 77.07 m. This result can be downloaded [here](../data/SP_syn_data.pickle) and seen below with [noise distribution](../images/results/noise_distribution.png). 
+Syntethic data was created from sphere model (using [fwd_sp.py](https://github.com/ezygeo-ai/mlgi/blob/master/scripts/fwd_sp.py)) with parameters K = 94,686, h = 41.81 m, alpha = 309.37, dan x0 = 77.07 m. This result can be downloaded [here](https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_syn_data.pickle) and seen below with noise distribution. 
 
 ```{figure} ../images/results/syntethic_data.png
 ---
-width: 45%
 name: syntethic_data
 ---
 ```
-
 ```{figure} ../images/results/noise_distribution.png
 ---
-width: 45%
 name: noise_distribution
 ---
 ```
 
 <ins>**Geophysical Inversion: Damped Least Squares (Levenberg–Marquardt) inversion (DLS)**</ins>
 
-I use DLS algorithm from [Kode Praktikum GP2103 Metode Komputasi versi Python](https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python) tutorial: [Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34](https://osf.io/36yh8/) and [pm6f.py](https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py) code. This result was showed using [sp_dls_inversion.py](../scripts/sp_dls_inversion.py) below.
+I use DLS algorithm from [Kode Praktikum GP2103 Metode Komputasi versi Python](https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python) tutorial: [Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34](https://osf.io/36yh8/) and [pm6f.py](https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py) code. This result was showed using [sp_dls_inversion.py](https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_dls_inversion.py) below.
 
 ```{figure} ../images/results/sp_dls_inv_result.png
 ---
-width: 45%
 name: sp_dls_inv_result
 ---
 ```
@@ -54,11 +50,11 @@ name: sp_dls_inv_result
 
 **Error**: 0.029529 %
 
-with research paper reference [W. Srigutomo, et al, 2016](http://ijphysics.com/index.php/ijp/article/view/138) that is modified [sp_dls_inversion_scratch.py]() below. Jacobian matrix was calculated using [derrivatives_in_python.py](../scripts/derrivatives_in_python.py).
+with research paper reference [W. Srigutomo, et al, 2016](http://ijphysics.com/index.php/ijp/article/view/138) that is modified [sp_dls_inversion_scratch.py]() below. Jacobian matrix was calculated using [derrivatives_in_python.py](https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py).
 
 <ins>**Machine Learning: Multilayer Perceptron Neural Networks (MLPNN)**</ins>
 
-Self-Potential Dataset that was generated with 5,000 different spherical models (using [sp_make_dataset.py](../scripts/sp_make_dataset.py)) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere [here](../data/SP_Dataset.pickle) and seen below (using [sp_show_dataset.py](../scripts/sp_show_dataset.py)). This dataset contains training (**80%**) dan validation (**20%**) dataset.
+Self-Potential Dataset that was generated with 5,000 different spherical models (using [sp_make_dataset.py](https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_make_dataset.py)) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere [here](https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_Dataset.pickle) and seen below (using [sp_show_dataset.py](https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_show_dataset.py)). This dataset contains training (**80%**) dan validation (**20%**) dataset.
 
 ```{figure} ../images/results/training_dataset.png
 ---
@@ -66,7 +62,6 @@ width: 40%
 name: training_dataset
 ---
 ```
-
 ```{figure} ../images/results/validation_dataset.png
 ---
 width: 40%
@@ -78,7 +73,6 @@ This MLPNN used two (2) hidden layers, input layer used 101 point of data (neuro
 
 ```{figure} ../images/tutorials/mlp.png
 ---
-width: 80%
 name: mlp
 ---
 ```

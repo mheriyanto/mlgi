@@ -94,7 +94,7 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="../_static/logo.png" class="logo" alt="logo">
+      <img src="../_static/ezygeo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Machine Learning for Geophysical Inversion</h1>
@@ -351,27 +351,27 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="kasus-self-potential-sp">
 <h1>Kasus Self Potential (SP)<a class="headerlink" href="#kasus-self-potential-sp" title="Permalink to this headline">#</a></h1>
-<p>The purpose of this repository is to reconstruct paper from Y. Kim and N. Nakata (The Leading Edge, Volume 37, Issue 12, Dec 2018) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle37120894.1">Geophysical inversion versus machine learning in inverse problems</a> and B. Russel (The Leading Edge, Volume 38, Issue 7, Jul 2019) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle38070512.1">Machine learning and geophysical inversion — A numerical study</a>. We construct this paper using <strong>Python</strong> and <strong>PyCharm IDE</strong>.</p>
+<p>The purpose of this repository is to reconstruct paper from Y. Kim and N. Nakata (The Leading Edge, Volume 37, Issue 12, Dec 2018) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle37120894.1">Geophysical inversion versus machine learning in inverse problems</a> and B. Russel (The Leading Edge, Volume 38, Issue 7, Jul 2019) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle38070512.1">Machine learning and geophysical inversion — A numerical study</a>.</p>
 <p>Reference: Inversion of Self Potential Anomalies with Multilayer Perceptron Neural Networks <a class="reference external" href="https://link.springer.com/article/10.1007/s00024-014-0778-y">Ilknur Kaftan et. al, 2014, Pure Appl. Geophys</a>
-Syntethic data was created from sphere model (using <span class="xref myst">fwd_sp.py</span>) with parameters K = 94,686, h = 41.81 m, alpha = 309.37, dan x0 = 77.07 m. This result can be downloaded <span class="xref myst">here</span> and seen below with <span class="xref myst">noise distribution</span>.</p>
+Syntethic data was created from sphere model (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/fwd_sp.py">fwd_sp.py</a>) with parameters K = 94,686, h = 41.81 m, alpha = 309.37, dan x0 = 77.07 m. This result can be downloaded <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_syn_data.pickle">here</a> and seen below with noise distribution.</p>
 <figure class="align-default" id="syntethic-data">
-<a class="reference internal image-reference" href="../_images/syntethic_data.png"><img alt="../_images/syntethic_data.png" src="../_images/syntethic_data.png" style="width: 45%;" /></a>
+<img alt="../_images/syntethic_data.png" src="../_images/syntethic_data.png" />
 </figure>
 <figure class="align-default" id="noise-distribution">
-<a class="reference internal image-reference" href="../_images/noise_distribution.png"><img alt="../_images/noise_distribution.png" src="../_images/noise_distribution.png" style="width: 45%;" /></a>
+<img alt="../_images/noise_distribution.png" src="../_images/noise_distribution.png" />
 </figure>
 <p><ins><strong>Geophysical Inversion: Damped Least Squares (Levenberg–Marquardt) inversion (DLS)</strong></ins></p>
-<p>I use DLS algorithm from <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python">Kode Praktikum GP2103 Metode Komputasi versi Python</a> tutorial: <a class="reference external" href="https://osf.io/36yh8/">Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34</a> and <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py">pm6f.py</a> code. This result was showed using <span class="xref myst">sp_dls_inversion.py</span> below.</p>
+<p>I use DLS algorithm from <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python">Kode Praktikum GP2103 Metode Komputasi versi Python</a> tutorial: <a class="reference external" href="https://osf.io/36yh8/">Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34</a> and <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py">pm6f.py</a> code. This result was showed using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_dls_inversion.py">sp_dls_inversion.py</a> below.</p>
 <figure class="align-default" id="sp-dls-inv-result">
-<a class="reference internal image-reference" href="../_images/sp_dls_inv_result.png"><img alt="../_images/sp_dls_inv_result.png" src="../_images/sp_dls_inv_result.png" style="width: 45%;" /></a>
+<img alt="../_images/sp_dls_inv_result.png" src="../_images/sp_dls_inv_result.png" />
 </figure>
 <p><strong>Initial Model</strong> x0: 20 | alpha: 100 (deg) | h: 40 | K: 94500</p>
 <p><strong>Real Model</strong> x0: 77.070000 | alpha: 5.399525 (rad) | h: 41.810000 | K: 94686.000000</p>
 <p><strong>Inversion Model</strong> x0: 76.243426 | alpha: 5.415794 (rad) | h: 42.776603 | K: 99102.106072</p>
 <p><strong>Error</strong>: 0.029529 %</p>
-<p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <span class="xref myst">sp_dls_inversion_scratch.py</span> below. Jacobian matrix was calculated using <span class="xref myst">derrivatives_in_python.py</span>.</p>
+<p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <span class="xref myst">sp_dls_inversion_scratch.py</span> below. Jacobian matrix was calculated using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py">derrivatives_in_python.py</a>.</p>
 <p><ins><strong>Machine Learning: Multilayer Perceptron Neural Networks (MLPNN)</strong></ins></p>
-<p>Self-Potential Dataset that was generated with 5,000 different spherical models (using <span class="xref myst">sp_make_dataset.py</span>) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere <span class="xref myst">here</span> and seen below (using <span class="xref myst">sp_show_dataset.py</span>). This dataset contains training (<strong>80%</strong>) dan validation (<strong>20%</strong>) dataset.</p>
+<p>Self-Potential Dataset that was generated with 5,000 different spherical models (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_make_dataset.py">sp_make_dataset.py</a>) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_Dataset.pickle">here</a> and seen below (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_show_dataset.py">sp_show_dataset.py</a>). This dataset contains training (<strong>80%</strong>) dan validation (<strong>20%</strong>) dataset.</p>
 <figure class="align-default" id="training-dataset">
 <a class="reference internal image-reference" href="../_images/training_dataset.png"><img alt="../_images/training_dataset.png" src="../_images/training_dataset.png" style="width: 40%;" /></a>
 </figure>
@@ -380,7 +380,7 @@ Syntethic data was created from sphere model (using <span class="xref myst">fwd_
 </figure>
 <p>This MLPNN used two (2) hidden layers, input layer used 101 point of data (neurons), first layer used 2 neurons and second layer used five (5) neurons. Then, learning rate = 0.1, activation function = hyperbolic tangent sigmoid function. The final MSE = 0.00306092 from 150 epochs.</p>
 <figure class="align-default" id="mlp">
-<a class="reference internal image-reference" href="../_images/mlp.png"><img alt="../_images/mlp.png" src="../_images/mlp.png" style="width: 80%;" /></a>
+<img alt="../_images/mlp.png" src="../_images/mlp.png" />
 </figure>
 </section>
 
