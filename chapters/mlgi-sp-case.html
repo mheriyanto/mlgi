@@ -370,13 +370,13 @@ Syntethic data was created from sphere model (using <a class="reference external
 <p><strong>Inversion Model</strong> x0: 76.243426 | alpha: 5.415794 (rad) | h: 42.776603 | K: 99102.106072</p>
 <p><strong>Error</strong>: 0.029529 %</p>
 <p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <span class="xref myst">sp_dls_inversion_scratch.py</span> below. Jacobian matrix was calculated using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py">derrivatives_in_python.py</a>.</p>
-<p><ins><strong>Machine Learning: Multilayer Perceptron Neural Networks (MLPNN)</strong></ins></p>
+<p><ins><strong>Machine Learning: Multilayer Perceptron Neural Networks (MLP)</strong></ins></p>
 <p>Self-Potential Dataset that was generated with 5,000 different spherical models (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_make_dataset.py">sp_make_dataset.py</a>) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_Dataset.pickle">here</a> and seen below (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_show_dataset.py">sp_show_dataset.py</a>). This dataset contains training (<strong>80%</strong>) dan validation (<strong>20%</strong>) dataset.</p>
 <figure class="align-default" id="training-dataset">
-<a class="reference internal image-reference" href="../_images/training_dataset.png"><img alt="../_images/training_dataset.png" src="../_images/training_dataset.png" style="width: 40%;" /></a>
+<img alt="../_images/training_dataset.png" src="../_images/training_dataset.png" />
 </figure>
 <figure class="align-default" id="validation-dataset">
-<a class="reference internal image-reference" href="../_images/validation_dataset.png"><img alt="../_images/validation_dataset.png" src="../_images/validation_dataset.png" style="width: 40%;" /></a>
+<img alt="../_images/validation_dataset.png" src="../_images/validation_dataset.png" />
 </figure>
 <p>This MLPNN used two (2) hidden layers, input layer used 101 point of data (neurons), first layer used 2 neurons and second layer used five (5) neurons. Then, learning rate = 0.1, activation function = hyperbolic tangent sigmoid function. The final MSE = 0.00306092 from 150 epochs.</p>
 <figure class="align-default" id="mlp">
