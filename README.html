@@ -92,7 +92,7 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="_static/https://github.com/ezygeo/ezygeo.github.io/blob/master/assets/product_images/logo.png" class="logo" alt="logo">
+      <img src="_static/https://raw.githubusercontent.com/ezygeo/ezygeo.github.io/master/assets/product_images/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Machine Learning for Geophysical Inversion</h1>
@@ -113,18 +113,13 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="chapters/markdown.html">
-   Markdown Files
+  <a class="reference internal" href="chapters/1-mlgi-sp-case.html">
+   Machine Learning and Geophysical Inversion: Self-Potential Case
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="notebook/notebooks.html">
-   Content with notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chapters/markdown-notebooks.html">
-   Notebooks with MyST Markdown
+  <a class="reference internal" href="notebook/fwd_sp.html">
+   Hands-On Machine Learning and Geophysical Inversion: Self-Potential Case
   </a>
  </li>
 </ul>
@@ -282,36 +277,12 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#machine-learning-and-geophysical-inversion-self-potential-case">
-   Machine Learning and Geophysical Inversion: Self-Potential Case
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
@@ -323,19 +294,6 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#machine-learning-and-geophysical-inversion-self-potential-case">
-   Machine Learning and Geophysical Inversion: Self-Potential Case
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -353,36 +311,6 @@ title="Print to PDF"
 <a class="reference external" href="https://www.linkedin.com/company/28696953"><img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&amp;logo=linkedin&amp;colorB=555" /></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="machine-learning-for-geophysical-inversion">
 <h1>Machine Learning for Geophysical Inversion<a class="headerlink" href="#machine-learning-for-geophysical-inversion" title="Permalink to this headline">#</a></h1>
-<p>The purpose of this repository is to reconstruct paper from Y. Kim and N. Nakata (The Leading Edge, Volume 37, Issue 12, Dec 2018) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle37120894.1">Geophysical inversion versus machine learning in inverse problems</a> and B. Russel (The Leading Edge, Volume 38, Issue 7, Jul 2019) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle38070512.1">Machine learning and geophysical inversion — A numerical study</a>. We construct this paper using <strong>Python</strong> and <strong>PyCharm IDE</strong>.</p>
-<p>Before I will do it, I just try to compare Machine Learning (Multilayer Perceptron Neural Networks
-(MLPNN)) and Geophysical Inversion (traditional Damped Least Squares (Levenberg–Marquardt) inversion technique (DLS)) using paper from Ilknur Kaftan (Pure Appl. Geophys., Vol. 171, Issue 8, pp 1939–1949, 2014) about <a class="reference external" href="https://link.springer.com/article/10.1007/s00024-014-0778-y">Inversion of Self Potential Anomalies with Multilayer Perceptron Neural Networks</a>.</p>
-<section id="machine-learning-and-geophysical-inversion-self-potential-case">
-<h2>Machine Learning and Geophysical Inversion: Self-Potential Case<a class="headerlink" href="#machine-learning-and-geophysical-inversion-self-potential-case" title="Permalink to this headline">#</a></h2>
-<p>Reference: Inversion of Self Potential Anomalies with Multilayer Perceptron Neural Networks <a class="reference external" href="https://link.springer.com/article/10.1007/s00024-014-0778-y">Ilknur Kaftan et. al, 2014, Pure Appl. Geophys</a>
-Syntethic data was created from sphere model (using <span class="xref myst">fwd_sp.py</span>) with parameters K = 94,686, h = 41.81 m, alpha = 309.37, dan x0 = 77.07 m. This result can be downloaded <span class="xref myst">here</span> and seen below with <span class="xref myst">noise distribution</span>.</p>
-<p align="center">
-<img src="images/results/syntethic_data.png" width="45%"> <img src="images/results/noise_distribution.png" width="45%">
-</p>
-<p><ins><strong>Geophysical Inversion: Damped Least Squares (Levenberg–Marquardt) inversion (DLS)</strong></ins></p>
-<p>I use DLS algorithm from <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python">Kode Praktikum GP2103 Metode Komputasi versi Python</a> tutorial: <a class="reference external" href="https://osf.io/36yh8/">Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34</a> and <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py">pm6f.py</a> code. This result was showed using <span class="xref myst">sp_dls_inversion.py</span> below.</p>
-<p align="center">
-<img src="images/results/sp_dls_inv_result.png" width="80%">
-</p>
-<p><strong>Initial Model</strong> x0: 20 | alpha: 100 (deg) | h: 40 | K: 94500</p>
-<p><strong>Real Model</strong> x0: 77.070000 | alpha: 5.399525 (rad) | h: 41.810000 | K: 94686.000000</p>
-<p><strong>Inversion Model</strong> x0: 76.243426 | alpha: 5.415794 (rad) | h: 42.776603 | K: 99102.106072</p>
-<p><strong>Error</strong>: 0.029529 %</p>
-<p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <span class="xref myst">sp_dls_inversion_scratch.py</span> below. Jacobian matrix was calculated using <span class="xref myst">derrivatives_in_python.py</span>.</p>
-<p><ins><strong>Machine Learning: Multilayer Perceptron Neural Networks (MLPNN)</strong></ins></p>
-<p>Self-Potential Dataset that was generated with 5,000 different spherical models (using <span class="xref myst">sp_make_dataset.py</span>) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere <span class="xref myst">here</span> and seen below (using <span class="xref myst">sp_show_dataset.py</span>). This dataset contains training (<strong>80%</strong>) dan validation (<strong>20%</strong>) dataset.</p>
-<p align="center">
-<img src="images/results/training_dataset.png" width="40%"> <img src="images/results/validation_dataset.png" width="40%">
-</p>
-<p>This MLPNN used two (2) hidden layers, input layer used 101 point of data (neurons), first layer used 2 neurons and second layer used five (5) neurons. Then, learning rate = 0.1, activation function = hyperbolic tangent sigmoid function. The final MSE = 0.00306092 from 150 epochs.</p>
-<p align="center">
-<img src="images/tutorials/mlp.png" width="80%">
-</p>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -419,7 +347,7 @@ Syntethic data was created from sphere model (using <span class="xref myst">fwd_
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Mohammad Heriyanto<br/>
+    By mheriyanto<br/>
   
       &copy; Copyright 2022.<br/>
 </p>
