@@ -6,7 +6,7 @@ Biasanya pada beberapa buku, bagian ini disebut sebagai **pemodelan kedepan / pe
     <a href="https://gif.eos.ubc.ca/IAG">
         <img align="center" src="tutorials/fwd.png" />
     </a>
-    **Gambar** - Proses pemodelan kedepan[^1]
+    <!-- **Gambar** - Proses pemodelan kedepan[^1] -->
 </p>
 
 [^inversi-grandis]: Grandis, Hendra. 2009. Pengantar Pemodelan Inversi Geofisika. HAGI : Bandung.

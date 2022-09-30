@@ -7,7 +7,7 @@ Beberapa pengukuran metode geofisika yang umum dilakukan: gravity, magnetik, sei
     <a href="https://gif.eos.ubc.ca/IAG">
         <img align="center" src="tutorials/surveys.png" />
     </a>
-    **Gambar 1.** - Gambaran pengukuran metode geofisika[^1]
+    <!-- **Gambar 1.** - Gambaran pengukuran metode geofisika [^1] -->
 </p>
 
 Ketika melakukan pengukuran metode geofisika di lapangan maka didapatkah **data**. Kemudian dari data tersebut perlu dinterpretasi, baik berupa interpretasi kualitatif ataupun kuantatif untuk bisa menjelaskan kondisi bawah permukaan bumi yang berupa parameter fisis densitas, susceptibilitas, resistivitas dan lain-lain. Parameter fisis bawah permukaan ini biasa disebut sebagai **model** atau model bawah permukaan.
@@ -16,7 +16,7 @@ Ketika melakukan pengukuran metode geofisika di lapangan maka didapatkah **data*
     <a href="https://gif.eos.ubc.ca/IAG">
         <img align="center" src="tutorials/techniques-targets.png" />
     </a>
-    **Gambar 2.** - Metode-metode geofisika dan parameter fisis bawah permukaan[^1]
+    Gambar 2. - Metode-metode geofisika dan parameter fisis bawah permukaan[^1]
 </p>
 
 Interpretasi kuantitatif dengan menggunakan persamaan yang menghubungkan data dengan parameter fisis bawah permukaan, biasanya dinamakan **inversi**.
@@ -25,7 +25,13 @@ Interpretasi kuantitatif dengan menggunakan persamaan yang menghubungkan data de
     <a href="https://gif.eos.ubc.ca/IAG">
         <img align="center" src="tutorials/interpretation.png" />
     </a>
-    **Gambar 3.** - Interpretasi parameter fisis bawah permukaan dengan data[^1]
+    <!-- **Gambar 3.** - Interpretasi parameter fisis bawah permukaan dengan data[^1] -->
 </p>
+
+```{figure} tutorials/interpretation.png"
+---
+name: interpretation
+---
+```
 
 [^1]: Inversion Concept : Introduction Geophysical Inversion. Website: https://gif.eos.ubc.ca/IAG
