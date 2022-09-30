@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>2. Pemodelan Inversi &#8212; Hands-On Pembelajaran Mesin untuk Inversi Geofisika</title>
+    <title>2. Pemodelan Kedepan &#8212; Hands-On Pembelajaran Mesin untuk Inversi Geofisika</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2.1. Hands-On Kasus Self Potential (SP)" href="1fwd_sp.html" />
-    <link rel="prev" title="1.2. Hands-On Kasus Self Potential (SP)" href="../chap1/1fwd_sp.html" />
+    <link rel="next" title="2.1. Kasus Self Potential (SP)" href="1mlgi-sp-case.html" />
+    <link rel="prev" title="1.2. Kenapa Perlu Inversi?" href="../chap1/why-inversion.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -117,7 +117,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../chap1/chap1.html">
-   1. Pemodelan Kedepan
+   1. Pendahuluan
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -126,20 +126,20 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap1/1mlgi-sp-case.html">
-     1.1. Kasus Self Potential (SP)
+    <a class="reference internal" href="../chap1/surveys.html">
+     1.1. Pengukuran Geofisika
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap1/1fwd_sp.html">
-     1.2. Hands-On Kasus Self Potential (SP)
+    <a class="reference internal" href="../chap1/why-inversion.html">
+     1.2. Kenapa Perlu Inversi?
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   2. Pemodelan Inversi
+   2. Pemodelan Kedepan
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -148,15 +148,20 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="1mlgi-sp-case.html">
+     2.1. Kasus Self Potential (SP)
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="1fwd_sp.html">
-     2.1. Hands-On Kasus Self Potential (SP)
+     2.2. Hands-On Kasus Self Potential (SP)
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../chap3/chap3.html">
-   3. Machine Learning
+   3. Pemodelan Inversi
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -167,6 +172,23 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../chap3/1fwd_sp.html">
      3.1. Hands-On Kasus Self Potential (SP)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chap4/chap4.html">
+   4. Machine Learning
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/1fwd_sp.html">
+     4.1. Hands-On Kasus Self Potential (SP)
     </a>
    </li>
   </ul>
@@ -356,7 +378,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Pemodelan Inversi</h1>
+                <h1>Pemodelan Kedepan</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -368,8 +390,24 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="pemodelan-inversi">
-<h1><span class="section-number">2. </span>Pemodelan Inversi<a class="headerlink" href="#pemodelan-inversi" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pemodelan-kedepan">
+<h1><span class="section-number">2. </span>Pemodelan Kedepan<a class="headerlink" href="#pemodelan-kedepan" title="Permalink to this headline">#</a></h1>
+<p>Biasanya pada beberapa buku, bagian ini disebut sebagai <strong>pemodelan kedepan / pemodelan / modeling / foward modeling</strong> yaitu proses membuat <strong>data/respons</strong> dengan menggunakan persamaan <em>forward</em> masing-masing metode geofisika yang sudah dimasukkan model / parameter model bawah permukaan <a class="footnote-reference brackets" href="#inversi-grandis" id="id1">2</a>. Umumnya, hasil data/respons pada proses ini dinamakan data seintetik (buatan), jika model-nya dibuat secara <em>dummy</em>.</p>
+<figure class="align-default" id="fig-2-1">
+<a class="reference internal image-reference" href="figures/chap1/tutorials/fwd.png"><img alt="figures/chap1/tutorials/fwd.png" src="figures/chap1/tutorials/fwd.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Proses pemodelan kedepan.<a class="footnote-reference brackets" href="#id3" id="id2">1</a></span><a class="headerlink" href="#fig-2-1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="inversi-grandis"><span class="brackets"><a class="fn-backref" href="#id1">2</a></span></dt>
+<dd><p>Grandis, Hendra. 2009. Pengantar Pemodelan Inversi Geofisika. HAGI : Bandung.</p>
+</dd>
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>Inversion Concept : Introduction Geophysical Inversion. Website: <a class="reference external" href="https://gif.eos.ubc.ca/IAG">https://gif.eos.ubc.ca/IAG</a></p>
+</dd>
+</dl>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -401,17 +439,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../chap1/1fwd_sp.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../chap1/why-inversion.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">1.2. </span>Hands-On Kasus Self Potential (SP)</p>
+            <p class="prev-next-title"><span class="section-number">1.2. </span>Kenapa Perlu Inversi?</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="1fwd_sp.html" title="next page">
+    <a class='right-next' id="next-link" href="1mlgi-sp-case.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2.1. </span>Hands-On Kasus Self Potential (SP)</p>
+        <p class="prev-next-title"><span class="section-number">2.1. </span>Kasus Self Potential (SP)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
