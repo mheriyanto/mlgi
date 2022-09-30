@@ -1,1 +1,4 @@
 # Unsupervised Learning
+```{contents}
+:local:
+```

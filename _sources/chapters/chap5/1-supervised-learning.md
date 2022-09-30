@@ -1,1 +1,4 @@
 # Supervised Learning
+```{contents}
+:local:
+```

@@ -1,1 +1,4 @@
 # **Metaheuristics**
+```{contents}
+:local:
+```
