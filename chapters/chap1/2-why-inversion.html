@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pendahuluan &#8212; *Hands-On* Pembelajaran Mesin untuk Inversi Geofisika
+    <title>Kenapa Perlu Inversi? &#8212; *Hands-On* Pembelajaran Mesin untuk Inversi Geofisika
 </title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Pengukuran Geofisika" href="1-surveys.html" />
-    <link rel="prev" title="Hands-On Pembelajaran Mesin untuk Inversi Geofisika" href="../../home.html" />
+    <link rel="next" title="Pemodelan Kedepan" href="../chap2/chap2.html" />
+    <link rel="prev" title="Pengukuran Geofisika" href="1-surveys.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -123,7 +123,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="chap1.html">
    <strong>
     Pendahuluan
    </strong>
@@ -133,14 +133,14 @@ const thebe_selector_output = ".output, .cell_output"
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="1-surveys.html">
      Pengukuran Geofisika
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="2-why-inversion.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Kenapa Perlu Inversi?
     </a>
    </li>
@@ -343,7 +343,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap1/chap1.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap1/2-why-inversion.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -360,7 +360,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap1/chap1.md"
+        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap1/2-why-inversion.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -388,7 +388,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/chapters/chap1/chap1.md"
+        <a href="../../_sources/chapters/chap1/2-why-inversion.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -437,7 +437,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Pendahuluan</h1>
+                <h1>Kenapa Perlu Inversi?</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -449,10 +449,23 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="pendahuluan">
-<h1><strong>Pendahuluan</strong><a class="headerlink" href="#pendahuluan" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="kenapa-perlu-inversi">
+<h1>Kenapa Perlu Inversi?<a class="headerlink" href="#kenapa-perlu-inversi" title="Permalink to this headline">#</a></h1>
+<p>Berikut ini perbedaan ketika data pengukuran diinterpretasi secara kualutatif dengan kuantitif.</p>
+<figure class="align-default" id="fig-1-4">
+<a class="reference internal image-reference" href="../../_images/why-inversion.png"><img alt="../../_images/why-inversion.png" src="../../_images/why-inversion.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Perbedaan interpretasi kualitatif dan kuantitatif.<a class="footnote-reference brackets" href="#id2" id="id1">1</a></span><a class="headerlink" href="#fig-1-4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Interpretasi kualitatif dilakukan dengan cara melakukan <em>processing</em> data dengan menggunakan berbagai metode, biasanya menggunakan filtering/smoothing data kemudian diplotkan hasilnya. Interpretasinya dilakukan dengan mendeskripsikan hasil plot tersebut.</p>
+<p>Sementara interpretasi kuantitatif, selain dilakukan plot data hasil <em>processing</em> data, juga dilakukan proses <strong>inversi</strong> dengan memakai informasi tambahan dari kondisi lapangan dan plot data sebelumnya. Hasil inversi tersebut berupa model atau distribusi properti fisis bawah permukaan bumi.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Inversion Concept : Introduction Geophysical Inversion. Website: <a class="reference external" href="https://gif.eos.ubc.ca/IAG">https://gif.eos.ubc.ca/IAG</a></p>
+</dd>
+</dl>
 </section>
 
     <script type="text/x-thebe-config">
@@ -482,17 +495,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../../home.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="1-surveys.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><em>Hands-On</em> Pembelajaran Mesin untuk Inversi Geofisika</p>
+            <p class="prev-next-title">Pengukuran Geofisika</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="1-surveys.html" title="next page">
+    <a class='right-next' id="next-link" href="../chap2/chap2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Pengukuran Geofisika</p>
+        <p class="prev-next-title"><strong>Pemodelan Kedepan</strong></p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

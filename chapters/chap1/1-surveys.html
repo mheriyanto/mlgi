@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pendahuluan &#8212; *Hands-On* Pembelajaran Mesin untuk Inversi Geofisika
+    <title>Pengukuran Geofisika &#8212; *Hands-On* Pembelajaran Mesin untuk Inversi Geofisika
 </title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Pengukuran Geofisika" href="1-surveys.html" />
-    <link rel="prev" title="Hands-On Pembelajaran Mesin untuk Inversi Geofisika" href="../../home.html" />
+    <link rel="next" title="Kenapa Perlu Inversi?" href="2-why-inversion.html" />
+    <link rel="prev" title="Pendahuluan" href="chap1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -123,7 +123,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="chap1.html">
    <strong>
     Pendahuluan
    </strong>
@@ -133,9 +133,9 @@ const thebe_selector_output = ".output, .cell_output"
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="1-surveys.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Pengukuran Geofisika
     </a>
    </li>
@@ -343,7 +343,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap1/chap1.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap1/1-surveys.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -360,7 +360,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap1/chap1.md"
+        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap1/1-surveys.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -388,7 +388,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/chapters/chap1/chap1.md"
+        <a href="../../_sources/chapters/chap1/1-surveys.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -437,7 +437,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Pendahuluan</h1>
+                <h1>Pengukuran Geofisika</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -449,10 +449,38 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="pendahuluan">
-<h1><strong>Pendahuluan</strong><a class="headerlink" href="#pendahuluan" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="pengukuran-geofisika">
+<h1>Pengukuran Geofisika<a class="headerlink" href="#pengukuran-geofisika" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>Diperbarui: Minggu, 6 November 2016</p>
+</div></blockquote>
+<p>Beberapa pengukuran metode geofisika yang umum dilakukan: gravity, magnetik, seismik refraksi, seismik refleksi, dc listrik, spontaneous potential, induced polarization, electromagnetik (EM), EM - very low frequency, EM - ground penetrating radar, magnetotellurik dan lain-lain.</p>
+<figure class="align-default" id="fig-1-1">
+<a class="reference internal image-reference" href="../../_images/surveys.png"><img alt="../../_images/surveys.png" src="../../_images/surveys.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Gambaran pengukuran metode geofisika.<a class="footnote-reference brackets" href="#id4" id="id1">1</a></span><a class="headerlink" href="#fig-1-1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Ketika melakukan pengukuran metode geofisika di lapangan maka didapatkah <strong>data</strong>. Kemudian dari data tersebut perlu dinterpretasi, baik berupa interpretasi kualitatif ataupun kuantatif untuk bisa menjelaskan kondisi bawah permukaan bumi yang berupa parameter fisis densitas, susceptibilitas, resistivitas dan lain-lain. Parameter fisis bawah permukaan ini biasa disebut sebagai <strong>model</strong> atau model bawah permukaan.</p>
+<figure class="align-default" id="fig-1-2">
+<a class="reference internal image-reference" href="../../_images/techniques-targets.png"><img alt="../../_images/techniques-targets.png" src="../../_images/techniques-targets.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Metode-metode geofisika dan parameter fisis bawah permukaan.<a class="footnote-reference brackets" href="#id4" id="id2">1</a></span><a class="headerlink" href="#fig-1-2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Interpretasi kuantitatif dengan menggunakan persamaan yang menghubungkan data dengan parameter fisis bawah permukaan, biasanya dinamakan <strong>inversi</strong>.</p>
+<figure class="align-default" id="fig-1-3">
+<a class="reference internal image-reference" href="../../_images/interpretation.jpg"><img alt="../../_images/interpretation.jpg" src="../../_images/interpretation.jpg" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Interpretasi parameter fisis bawah permukaan dengan data.<a class="footnote-reference brackets" href="#id4" id="id3">1</a></span><a class="headerlink" href="#fig-1-3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id4"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>,<a href="#id3">3</a>)</span></dt>
+<dd><p>Inversion Concept : Introduction Geophysical Inversion. Website: <a class="reference external" href="https://gif.eos.ubc.ca/IAG">https://gif.eos.ubc.ca/IAG</a></p>
+</dd>
+</dl>
 </section>
 
     <script type="text/x-thebe-config">
@@ -482,17 +510,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../../home.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="chap1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><em>Hands-On</em> Pembelajaran Mesin untuk Inversi Geofisika</p>
+            <p class="prev-next-title"><strong>Pendahuluan</strong></p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="1-surveys.html" title="next page">
+    <a class='right-next' id="next-link" href="2-why-inversion.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Pengukuran Geofisika</p>
+        <p class="prev-next-title">Kenapa Perlu Inversi?</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
