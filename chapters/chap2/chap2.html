@@ -6,53 +6,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Machine Learning for Geophysical Inversion &#8212; Machine Learning for Geophysical Inversion</title>
+    <title>2. Pemodelan Inversi &#8212; Machine Learning for Geophysical Inversion</title>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Kasus Self Potential (SP)" href="chapters/mlgi-sp-case.html" />
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.1. Hands-On Kasus Self Potential (SP)" href="1fwd_sp.html" />
+    <link rel="prev" title="1.2. Hands-On Kasus Self Potential (SP)" href="../chap1/1fwd_sp.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -87,41 +89,87 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+    <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="_static/ezygeo.png" class="logo" alt="logo">
+      <img src="../../_static/ezygeo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Machine Learning for Geophysical Inversion</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
                     Machine Learning for Geophysical Inversion
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="chapters/mlgi-sp-case.html">
-   Kasus Self Potential (SP)
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chap1/chap1.html">
+   1. Pemodelan Kedepan
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap1/1mlgi-sp-case.html">
+     1.1. Kasus Self Potential (SP)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap1/1fwd_sp.html">
+     1.2. Hands-On Kasus Self Potential (SP)
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebook/fwd_sp.html">
-   Hands-On Kasus Self Potential (SP)
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   2. Pemodelan Inversi
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1fwd_sp.html">
+     2.1. Hands-On Kasus Self Potential (SP)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chap3/chap3.html">
+   3. Machine Learning
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap3/1fwd_sp.html">
+     3.1. Hands-On Kasus Self Potential (SP)
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -131,7 +179,8 @@ const thebe_selector_output = ".output, .cell_output"
              <!-- To handle the deprecated key -->
             
             <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            <a href="https://doi.org/10.5281/zenodo.1807591"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1807591.svg" alt="DOI"></a></br> <a href="https://github.com/ezygeo-ai/mlgi/blob/master/LICENSE"><img src="https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="Licence"></a>
+
             </div>
             
         </div>
@@ -213,7 +262,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap2/chap2.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -225,6 +274,23 @@ title="Open an issue"
   <i class="fas fa-lightbulb"></i>
   </span>
 <span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap2/chap2.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
 </a>
 
       </li>
@@ -241,7 +307,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/intro.md"
+        <a href="../../_sources/chapters/chap2/chap2.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -290,7 +356,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Machine Learning for Geophysical Inversion</h1>
+                <h1>Pemodelan Inversi</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -302,15 +368,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="machine-learning-for-geophysical-inversion">
-<h1>Machine Learning for Geophysical Inversion<a class="headerlink" href="#machine-learning-for-geophysical-inversion" title="Permalink to this headline">#</a></h1>
-<p>Berikut ini adalah halaman muka dari kumpulan artikel terkait implementasi machine learning di pemodelan dan inversi geofisika</p>
-<p>Daftar isi</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="pemodelan-inversi">
+<h1><span class="section-number">2. </span>Pemodelan Inversi<a class="headerlink" href="#pemodelan-inversi" title="Permalink to this headline">#</a></h1>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="chapters/mlgi-sp-case.html">Kasus Self Potential (SP)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebook/fwd_sp.html">Hands-On Kasus Self Potential (SP)</a></li>
-</ul>
 </div>
 </section>
 
@@ -327,7 +387,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./."
+            path: "./chapters/chap2"
         },
         predefinedOutput: true
     }
@@ -341,10 +401,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="chapters/mlgi-sp-case.html" title="next page">
+    <a class='left-prev' id="prev-link" href="../chap1/1fwd_sp.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">1.2. </span>Hands-On Kasus Self Potential (SP)</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="1fwd_sp.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Kasus Self Potential (SP)</p>
+        <p class="prev-next-title"><span class="section-number">2.1. </span>Hands-On Kasus Self Potential (SP)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -355,9 +422,14 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By mheriyanto<br/>
+    By <a href="mailto:mheriyanto37@gmail.com">Mohammad Heriyanto</a>, ezygeo, Jakarta, Indonesia
+<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2016–2022.<br/>
+    <div class="extra_footer">
+      <p> This work is licenced under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence</a>. </p> <p> This book discusses methods to implement intelligent reasoning by means of Prolog programs. The book is written from the shared viewpoints of Computational Logic, which aims at automating various kinds of reasoning, and Artificial Intelligence, which seeks to implement aspects of intelligent behaviour on a computer. </p>
+
+    </div>
 </p>
         </footer>
     </div>
@@ -369,7 +441,7 @@ title="Print to PDF"
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
   </body>

@@ -6,54 +6,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Kasus Self Potential (SP) &#8212; Machine Learning for Geophysical Inversion</title>
+    <title>1.1. Kasus Self Potential (SP) &#8212; Machine Learning for Geophysical Inversion</title>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Hands-On Kasus Self Potential (SP)" href="../notebook/fwd_sp.html" />
-    <link rel="prev" title="Machine Learning for Geophysical Inversion" href="../intro.html" />
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="1.2. Hands-On Kasus Self Potential (SP)" href="1fwd_sp.html" />
+    <link rel="prev" title="1. Pemodelan Kedepan" href="chap1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -88,19 +89,19 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+    <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="../_static/ezygeo.png" class="logo" alt="logo">
+      <img src="../../_static/ezygeo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Machine Learning for Geophysical Inversion</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -114,15 +115,61 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Kasus Self Potential (SP)
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="chap1.html">
+   1. Pemodelan Kedepan
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     1.1. Kasus Self Potential (SP)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="1fwd_sp.html">
+     1.2. Hands-On Kasus Self Potential (SP)
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../notebook/fwd_sp.html">
-   Hands-On Kasus Self Potential (SP)
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chap2/chap2.html">
+   2. Pemodelan Inversi
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/1fwd_sp.html">
+     2.1. Hands-On Kasus Self Potential (SP)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chap3/chap3.html">
+   3. Machine Learning
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap3/1fwd_sp.html">
+     3.1. Hands-On Kasus Self Potential (SP)
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -132,7 +179,8 @@ const thebe_selector_output = ".output, .cell_output"
              <!-- To handle the deprecated key -->
             
             <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            <a href="https://doi.org/10.5281/zenodo.1807591"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1807591.svg" alt="DOI"></a></br> <a href="https://github.com/ezygeo-ai/mlgi/blob/master/LICENSE"><img src="https://img.shields.io/badge/Licence-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="Licence"></a>
+
             </div>
             
         </div>
@@ -183,7 +231,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/ezygeo-ai/mlgi/master?urlpath=tree/chapters/mlgi-sp-case.md"
+        <a href="https://mybinder.org/v2/gh/ezygeo-ai/mlgi/master?urlpath=tree/chapters/chap1/1mlgi-sp-case.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -193,7 +241,7 @@ title="Launch on Binder"
 
 <span class="headerbtn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img src="../../_static/images/logo_binder.svg">
   </span>
 <span class="headerbtn__text-container">Binder</span>
 </a>
@@ -243,7 +291,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/mlgi-sp-case.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap1/1mlgi-sp-case.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -255,6 +303,23 @@ title="Open an issue"
   <i class="fas fa-lightbulb"></i>
   </span>
 <span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap1/1mlgi-sp-case.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
 </a>
 
       </li>
@@ -271,7 +336,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/chapters/mlgi-sp-case.ipynb"
+        <a href="../../_sources/chapters/chap1/1mlgi-sp-case.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -288,7 +353,7 @@ title="Download notebook file"
       </li>
       
       <li>
-        <a href="../_sources/chapters/mlgi-sp-case.md"
+        <a href="../../_sources/chapters/chap1/1mlgi-sp-case.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -350,20 +415,20 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="kasus-self-potential-sp">
-<h1>Kasus Self Potential (SP)<a class="headerlink" href="#kasus-self-potential-sp" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">1.1. </span>Kasus Self Potential (SP)<a class="headerlink" href="#kasus-self-potential-sp" title="Permalink to this headline">#</a></h1>
 <p>The purpose of this repository is to reconstruct paper from Y. Kim and N. Nakata (The Leading Edge, Volume 37, Issue 12, Dec 2018) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle37120894.1">Geophysical inversion versus machine learning in inverse problems</a> and B. Russel (The Leading Edge, Volume 38, Issue 7, Jul 2019) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle38070512.1">Machine learning and geophysical inversion — A numerical study</a>.</p>
 <p>Reference: Inversion of Self Potential Anomalies with Multilayer Perceptron Neural Networks <a class="reference external" href="https://link.springer.com/article/10.1007/s00024-014-0778-y">Ilknur Kaftan et. al, 2014, Pure Appl. Geophys</a>
 Syntethic data was created from sphere model (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/fwd_sp.py">fwd_sp.py</a>) with parameters K = 94,686, h = 41.81 m, alpha = 309.37, dan x0 = 77.07 m. This result can be downloaded <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_syn_data.pickle">here</a> and seen below with noise distribution.</p>
 <figure class="align-default" id="syntethic-data">
-<img alt="../_images/syntethic_data.png" src="../_images/syntethic_data.png" />
+<img alt="../../_images/syntethic_data.png" src="../../_images/syntethic_data.png" />
 </figure>
 <figure class="align-default" id="noise-distribution">
-<img alt="../_images/noise_distribution.png" src="../_images/noise_distribution.png" />
+<img alt="../../_images/noise_distribution.png" src="../../_images/noise_distribution.png" />
 </figure>
 <p><ins><strong>Geophysical Inversion: Damped Least Squares (Levenberg–Marquardt) inversion (DLS)</strong></ins></p>
 <p>I use DLS algorithm from <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python">Kode Praktikum GP2103 Metode Komputasi versi Python</a> tutorial: <a class="reference external" href="https://osf.io/36yh8/">Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34</a> and <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py">pm6f.py</a> code. This result was showed using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_dls_inversion.py">sp_dls_inversion.py</a> below.</p>
 <figure class="align-default" id="sp-dls-inv-result">
-<img alt="../_images/sp_dls_inv_result.png" src="../_images/sp_dls_inv_result.png" />
+<img alt="../../_images/sp_dls_inv_result.png" src="../../_images/sp_dls_inv_result.png" />
 </figure>
 <p><strong>Initial Model</strong> x0: 20 | alpha: 100 (deg) | h: 40 | K: 94500</p>
 <p><strong>Real Model</strong> x0: 77.070000 | alpha: 5.399525 (rad) | h: 41.810000 | K: 94686.000000</p>
@@ -373,14 +438,14 @@ Syntethic data was created from sphere model (using <a class="reference external
 <p><ins><strong>Machine Learning: Multilayer Perceptron Neural Networks (MLP)</strong></ins></p>
 <p>Self-Potential Dataset that was generated with 5,000 different spherical models (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_make_dataset.py">sp_make_dataset.py</a>) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_Dataset.pickle">here</a> and seen below (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_show_dataset.py">sp_show_dataset.py</a>). This dataset contains training (<strong>80%</strong>) dan validation (<strong>20%</strong>) dataset.</p>
 <figure class="align-default" id="training-dataset">
-<img alt="../_images/training_dataset.png" src="../_images/training_dataset.png" />
+<img alt="../../_images/training_dataset.png" src="../../_images/training_dataset.png" />
 </figure>
 <figure class="align-default" id="validation-dataset">
-<img alt="../_images/validation_dataset.png" src="../_images/validation_dataset.png" />
+<img alt="../../_images/validation_dataset.png" src="../../_images/validation_dataset.png" />
 </figure>
 <p>This MLPNN used two (2) hidden layers, input layer used 101 point of data (neurons), first layer used 2 neurons and second layer used five (5) neurons. Then, learning rate = 0.1, activation function = hyperbolic tangent sigmoid function. The final MSE = 0.00306092 from 150 epochs.</p>
 <figure class="align-default" id="mlp">
-<img alt="../_images/mlp.png" src="../_images/mlp.png" />
+<img alt="../../_images/mlp.png" src="../../_images/mlp.png" />
 </figure>
 </section>
 
@@ -397,7 +462,7 @@ Syntethic data was created from sphere model (using <a class="reference external
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./chapters"
+            path: "./chapters/chap1"
         },
         predefinedOutput: true
     }
@@ -411,17 +476,17 @@ Syntethic data was created from sphere model (using <a class="reference external
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="chap1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Machine Learning for Geophysical Inversion</p>
+            <p class="prev-next-title"><span class="section-number">1. </span>Pemodelan Kedepan</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../notebook/fwd_sp.html" title="next page">
+    <a class='right-next' id="next-link" href="1fwd_sp.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Hands-On Kasus Self Potential (SP)</p>
+        <p class="prev-next-title"><span class="section-number">1.2. </span>Hands-On Kasus Self Potential (SP)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -432,9 +497,14 @@ Syntethic data was created from sphere model (using <a class="reference external
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By mheriyanto<br/>
+    By <a href="mailto:mheriyanto37@gmail.com">Mohammad Heriyanto</a>, ezygeo, Jakarta, Indonesia
+<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2016–2022.<br/>
+    <div class="extra_footer">
+      <p> This work is licenced under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence</a>. </p> <p> This book discusses methods to implement intelligent reasoning by means of Prolog programs. The book is written from the shared viewpoints of Computational Logic, which aims at automating various kinds of reasoning, and Artificial Intelligence, which seeks to implement aspects of intelligent behaviour on a computer. </p>
+
+    </div>
 </p>
         </footer>
     </div>
@@ -446,7 +516,7 @@ Syntethic data was created from sphere model (using <a class="reference external
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
   </body>
