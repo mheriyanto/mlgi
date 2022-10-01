@@ -181,22 +181,13 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3-sp.html">
+    <a class="reference internal" href="3-sp-py.html">
      2.3. Self Potential (SP)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3-fwd_sp.html">
-     2.4. [
-     <em>
-      Hands-On
-     </em>
-     ] Pemodelan Kedepan SP
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="4-ip.html">
-     2.5. Induced Polarization (IP)
+     2.4. Induced Polarization (IP)
     </a>
    </li>
   </ul>
@@ -307,6 +298,16 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
   </ul>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   📚
+   <strong>
+    Daftar Pustaka
+   </strong>
+  </a>
  </li>
 </ul>
 
@@ -507,31 +508,24 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="pemodelan-kedepan">
 <h1><span class="section-number">2. </span><strong>Pemodelan Kedepan</strong><a class="headerlink" href="#pemodelan-kedepan" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>Diperbarui: Minggu, 6 November 2016</p>
+</div></blockquote>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="1-grav.html">2.1. Gaya Berat (Gravity)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2-mag.html">2.2. Magnetik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-sp.html">2.3. Self Potential (SP)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3-fwd_sp.html">2.4. [<em>Hands-On</em>] Pemodelan Kedepan SP</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4-ip.html">2.5. Induced Polarization (IP)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3-sp-py.html">2.3. Self Potential (SP)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4-ip.html">2.4. Induced Polarization (IP)</a></li>
 </ul>
 </div>
-<p>Biasanya pada beberapa buku, bagian ini disebut sebagai <strong>pemodelan kedepan / pemodelan / <em>modeling / foward modeling</em></strong> yaitu proses membuat <strong>data/respons</strong> dengan menggunakan persamaan <em>forward</em> yang sudah dimasukkan model / parameter model bawah permukaan <a class="footnote-reference brackets" href="#inversi-grandis" id="id1">1</a>. Umumnya, hasil data/respons pada proses ini dinamakan data sintetik (buatan), jika model-nya dibuat secara <em>dummy</em>.</p>
+<p>Biasanya pada beberapa buku, bagian ini disebut sebagai <strong>pemodelan kedepan / pemodelan / <em>modeling / foward modeling</em></strong> yaitu proses membuat <strong>data/respons</strong> dengan menggunakan persamaan <em>forward</em> yang sudah dimasukkan model / parameter model bawah permukaan <span id="id1">[<a class="reference internal" href="../bibliography.html#id3" title="Hendra Grandis. Pengantar pemodelan inversi geofisika. Himpunan Ahli Geofisika Indonesia (HAGI), 2009.">Grandis, 2009</a>]</span>. Umumnya, hasil data/respons pada proses ini dinamakan data sintetik (buatan), jika model-nya dibuat secara <em>dummy</em>.</p>
 <figure class="align-default" id="fig-2-1">
 <a class="reference internal image-reference" href="../../_images/fwd.png"><img alt="../../_images/fwd.png" src="../../_images/fwd.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Proses pemodelan kedepan.<a class="footnote-reference brackets" href="#iag" id="id2">2</a></span><a class="headerlink" href="#fig-2-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Proses pemodelan kedepan <span id="id2">[<a class="reference internal" href="../bibliography.html#id5" title="Douglas Oldenburg. Inversion for applied geophysics (iag): a resource package for learning about geophysical inversion. 2007. URL: https://gif.eos.ubc.ca/IAG.">Oldenburg, 2007</a>]</span>.</span><a class="headerlink" href="#fig-2-1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<hr class="footnotes docutils" />
-<dl class="footnote brackets">
-<dt class="label" id="inversi-grandis"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Grandis, Hendra. 2009. Pengantar Pemodelan Inversi Geofisika. HAGI : Bandung.</p>
-</dd>
-<dt class="label" id="iag"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>Inversion Concept: Introduction Geophysical Inversion. Website: <a class="reference external" href="https://gif.eos.ubc.ca/IAG">https://gif.eos.ubc.ca/IAG</a></p>
-</dd>
-</dl>
 </section>
 
     <script type="text/x-thebe-config">
@@ -582,7 +576,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By <a href="mailto:mheriyanto37@gmail.com">Mohammad Heriyanto</a>, <a href="https://ezygeo.github.io">ezygeo</a>, Jakarta, Indonesia
+    By <a href="mailto:mheriyanto37@gmail.com">M. Heriyanto</a>, <a href="https://ezygeo.github.io">ezygeo</a>, Jakarta, Indonesia
 <br/>
   
       &copy; Copyright 2016–2022.<br/>

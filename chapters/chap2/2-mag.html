@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2.3. Self Potential (SP)" href="3-sp.html" />
+    <link rel="next" title="2.3. Self Potential (SP)" href="3-sp-py.html" />
     <link rel="prev" title="2.1. Gaya Berat (Gravity)" href="1-grav.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -181,22 +181,13 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3-sp.html">
+    <a class="reference internal" href="3-sp-py.html">
      2.3. Self Potential (SP)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="3-fwd_sp.html">
-     2.4. [
-     <em>
-      Hands-On
-     </em>
-     ] Pemodelan Kedepan SP
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="4-ip.html">
-     2.5. Induced Polarization (IP)
+     2.4. Induced Polarization (IP)
     </a>
    </li>
   </ul>
@@ -309,6 +300,16 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   📚
+   <strong>
+    Daftar Pustaka
+   </strong>
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav></div>
@@ -360,6 +361,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/ezygeo-ai/mlgi/master?urlpath=tree/chapters/chap2/2-mag.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -444,6 +474,23 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
+        <a href="../../_sources/chapters/chap2/2-mag.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
         <a href="../../_sources/chapters/chap2/2-mag.md"
    class="headerbtn"
    data-toggle="tooltip"
@@ -507,6 +554,18 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="magnetik">
 <h1><span class="section-number">2.2. </span>Magnetik<a class="headerlink" href="#magnetik" title="Permalink to this headline">#</a></h1>
+<blockquote>
+<div><p>Diperbarui: Minggu, 6 November 2016</p>
+</div></blockquote>
+<p>The purpose of this repository is to reconstruct paper from Y. Kim and N. Nakata (The Leading Edge, Volume 37, Issue 12, Dec 2018) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle37120894.1">Geophysical inversion versus machine learning in inverse problems</a> and B. Russel (The Leading Edge, Volume 38, Issue 7, Jul 2019) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle38070512.1">Machine learning and geophysical inversion — A numerical study</a>.</p>
+<p>Reference: Inversion of Self Potential Anomalies with Multilayer Perceptron Neural Networks <a class="reference external" href="https://link.springer.com/article/10.1007/s00024-014-0778-y">Ilknur Kaftan et. al, 2014, Pure Appl. Geophys</a>
+Syntethic data was created from sphere model (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/fwd_sp.py">fwd_sp.py</a>) with parameters K = 94,686, h = 41.81 m, alpha = 309.37, dan x0 = 77.07 m. This result can be downloaded <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_syn_data.pickle">here</a> and seen below with noise distribution.</p>
+<figure class="align-default" id="syntethic-data">
+<img alt="../../_images/syntethic_data.png" src="../../_images/syntethic_data.png" />
+</figure>
+<figure class="align-default" id="noise-distribution">
+<img alt="../../_images/noise_distribution.png" src="../../_images/noise_distribution.png" />
+</figure>
 </section>
 
     <script type="text/x-thebe-config">
@@ -543,7 +602,7 @@ title="Print to PDF"
             <p class="prev-next-title"><span class="section-number">2.1. </span>Gaya Berat (Gravity)</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="3-sp.html" title="next page">
+    <a class='right-next' id="next-link" href="3-sp-py.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">2.3. </span>Self Potential (SP)</p>
@@ -557,7 +616,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By <a href="mailto:mheriyanto37@gmail.com">Mohammad Heriyanto</a>, <a href="https://ezygeo.github.io">ezygeo</a>, Jakarta, Indonesia
+    By <a href="mailto:mheriyanto37@gmail.com">M. Heriyanto</a>, <a href="https://ezygeo.github.io">ezygeo</a>, Jakarta, Indonesia
 <br/>
   
       &copy; Copyright 2016–2022.<br/>
