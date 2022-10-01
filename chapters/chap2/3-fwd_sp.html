@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>2.2. [Hands-On] Pemodelan Kedepan SP &#8212; &lt;p&gt;&lt;i&gt;Hands-On&lt;/i&gt; Pembelajaran Mesin untuk Inversi Geofisika&lt;/p&gt;
+    <title>2.4. [Hands-On] Pemodelan Kedepan SP &#8212; &lt;p&gt;&lt;i&gt;Hands-On&lt;/i&gt; Pembelajaran Mesin untuk Inversi Geofisika&lt;/p&gt;
 </title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3. Pemodelan Inversi" href="../chap3/chap3.html" />
-    <link rel="prev" title="2.1. Kasus Self Potential (SP)" href="1-mlgi-sp-case.html" />
+    <link rel="next" title="2.5. Induced Polarization (IP)" href="4-ip.html" />
+    <link rel="prev" title="2.3. Self Potential (SP)" href="3-sp.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -171,13 +171,32 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="1-mlgi-sp-case.html">
-     2.1. Kasus Self Potential (SP)
+    <a class="reference internal" href="1-grav.html">
+     2.1. Gaya Berat (Gravity)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2-mag.html">
+     2.2. Magnetik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3-sp.html">
+     2.3. Self Potential (SP)
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     2.2. [Hands-On] Pemodelan Kedepan SP
+     2.4. [
+     <em>
+      Hands-On
+     </em>
+     ] Pemodelan Kedepan SP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="4-ip.html">
+     2.5. Induced Polarization (IP)
     </a>
    </li>
   </ul>
@@ -205,6 +224,11 @@ const thebe_selector_output = ".output, .cell_output"
      3.2. Levenberg Marquardt (LM)
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap3/3-svd.html">
+     3.3. Singular Value Decomposition (SVD)
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -218,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chap4/chap4.html">
    4.
    <strong>
-    Metaheuristics
+    Metaheuristik
    </strong>
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -228,18 +252,28 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/0-mc.html">
+     4.1. Monte Carlo (MC)
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chap4/1-sa.html">
-     4.1. Simulated Annealing (SA)
+     4.2. Simulated Annealing (SA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chap4/2-vfsa.html">
-     4.2. Very Fast Simulated Annealing (VFSA)
+     4.3. Very Fast Simulated Annealing (VFSA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chap4/3-pso.html">
-     4.3. Particle Swarm Optimization (PSO)
+     4.4. Particle Swarm Optimization (PSO)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/4-ga.html">
+     4.5. Genetic Algorithm (GA)
     </a>
    </li>
   </ul>
@@ -258,17 +292,17 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/1-supervised-learning.html">
+    <a class="reference internal" href="../chap5/1-sl.html">
      5.1. Supervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/2-unsupervised-learning.html">
+    <a class="reference internal" href="../chap5/2-ul.html">
      5.2. Unsupervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/3-neural-network.html">
+    <a class="reference internal" href="../chap5/3-nn.html">
      5.3. Neural Network (NN)
     </a>
    </li>
@@ -334,7 +368,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/ezygeo-ai/mlgi/master?urlpath=tree/chapters/chap2/1-fwd_sp.ipynb"
+        <a href="https://mybinder.org/v2/gh/ezygeo-ai/mlgi/master?urlpath=tree/chapters/chap2/3-fwd_sp.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -394,7 +428,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap2/1-fwd_sp.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap2/3-fwd_sp.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -411,7 +445,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap2/1-fwd_sp.ipynb"
+        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap2/3-fwd_sp.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -439,7 +473,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/chapters/chap2/1-fwd_sp.ipynb"
+        <a href="../../_sources/chapters/chap2/3-fwd_sp.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -500,8 +534,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="hands-on-pemodelan-kedepan-sp">
-<h1><span class="section-number">2.2. </span>[Hands-On] Pemodelan Kedepan SP<a class="headerlink" href="#hands-on-pemodelan-kedepan-sp" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="hands-on-pemodelan-kedepan-sp">
+<h1><span class="section-number">2.4. </span>[<em>Hands-On</em>] Pemodelan Kedepan SP<a class="headerlink" href="#hands-on-pemodelan-kedepan-sp" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -588,8 +622,8 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/1-fwd_sp_8_0.png" src="../../_images/1-fwd_sp_8_0.png" />
-<img alt="../../_images/1-fwd_sp_8_1.png" src="../../_images/1-fwd_sp_8_1.png" />
+<img alt="../../_images/3-fwd_sp_8_0.png" src="../../_images/3-fwd_sp_8_0.png" />
+<img alt="../../_images/3-fwd_sp_8_1.png" src="../../_images/3-fwd_sp_8_1.png" />
 </div>
 </div>
 <p>Save output</p>
@@ -630,17 +664,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="1-mlgi-sp-case.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="3-sp.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2.1. </span>Kasus Self Potential (SP)</p>
+            <p class="prev-next-title"><span class="section-number">2.3. </span>Self Potential (SP)</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../chap3/chap3.html" title="next page">
+    <a class='right-next' id="next-link" href="4-ip.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span><strong>Pemodelan Inversi</strong></p>
+        <p class="prev-next-title"><span class="section-number">2.5. </span>Induced Polarization (IP)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

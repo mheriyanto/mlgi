@@ -1,4 +1,4 @@
-## Simulated Annealing (SA)
+# Simulated Annealing (SA)
 
 ```{contents}
 :local:

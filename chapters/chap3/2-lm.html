@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4. Metaheuristics" href="../chap4/chap4.html" />
+    <link rel="next" title="3.3. Singular Value Decomposition (SVD)" href="3-svd.html" />
     <link rel="prev" title="3.1. Least Square (LS)" href="1-ls.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -171,13 +171,32 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap2/1-mlgi-sp-case.html">
-     2.1. Kasus Self Potential (SP)
+    <a class="reference internal" href="../chap2/1-grav.html">
+     2.1. Gaya Berat (Gravity)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap2/1-fwd_sp.html">
-     2.2. [Hands-On] Pemodelan Kedepan SP
+    <a class="reference internal" href="../chap2/2-mag.html">
+     2.2. Magnetik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/3-sp.html">
+     2.3. Self Potential (SP)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/3-fwd_sp.html">
+     2.4. [
+     <em>
+      Hands-On
+     </em>
+     ] Pemodelan Kedepan SP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/4-ip.html">
+     2.5. Induced Polarization (IP)
     </a>
    </li>
   </ul>
@@ -205,6 +224,11 @@ const thebe_selector_output = ".output, .cell_output"
      3.2. Levenberg Marquardt (LM)
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="3-svd.html">
+     3.3. Singular Value Decomposition (SVD)
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -218,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chap4/chap4.html">
    4.
    <strong>
-    Metaheuristics
+    Metaheuristik
    </strong>
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -228,18 +252,28 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/0-mc.html">
+     4.1. Monte Carlo (MC)
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chap4/1-sa.html">
-     4.1. Simulated Annealing (SA)
+     4.2. Simulated Annealing (SA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chap4/2-vfsa.html">
-     4.2. Very Fast Simulated Annealing (VFSA)
+     4.3. Very Fast Simulated Annealing (VFSA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chap4/3-pso.html">
-     4.3. Particle Swarm Optimization (PSO)
+     4.4. Particle Swarm Optimization (PSO)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/4-ga.html">
+     4.5. Genetic Algorithm (GA)
     </a>
    </li>
   </ul>
@@ -258,17 +292,17 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/1-supervised-learning.html">
+    <a class="reference internal" href="../chap5/1-sl.html">
      5.1. Supervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/2-unsupervised-learning.html">
+    <a class="reference internal" href="../chap5/2-ul.html">
      5.2. Unsupervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/3-neural-network.html">
+    <a class="reference internal" href="../chap5/3-nn.html">
      5.3. Neural Network (NN)
     </a>
    </li>
@@ -471,18 +505,18 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="levenberg-marquardt-lm">
+  <section class="tex2jax_ignore mathjax_ignore" id="levenberg-marquardt-lm">
 <h1><span class="section-number">3.2. </span>Levenberg Marquardt (LM)<a class="headerlink" href="#levenberg-marquardt-lm" title="Permalink to this headline">#</a></h1>
 <p><ins><strong>Geophysical Inversion: Damped Least Squares (Levenberg–Marquardt) inversion (DLS)</strong></ins></p>
 <p>I use DLS algorithm from <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python">Kode Praktikum GP2103 Metode Komputasi versi Python</a> tutorial: <a class="reference external" href="https://osf.io/36yh8/">Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34</a> and <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py">pm6f.py</a> code. This result was showed using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_dls_inversion.py">sp_dls_inversion.py</a> below.</p>
 <figure class="align-default" id="sp-dls-inv-result">
-<img alt="figures/chap2/results/sp_dls_inv_result.png" src="figures/chap2/results/sp_dls_inv_result.png" />
+<img alt="../../_images/sp_dls_inv_result.png" src="../../_images/sp_dls_inv_result.png" />
 </figure>
 <p><strong>Initial Model</strong> x0: 20 | alpha: 100 (deg) | h: 40 | K: 94500</p>
 <p><strong>Real Model</strong> x0: 77.070000 | alpha: 5.399525 (rad) | h: 41.810000 | K: 94686.000000</p>
 <p><strong>Inversion Model</strong> x0: 76.243426 | alpha: 5.415794 (rad) | h: 42.776603 | K: 99102.106072</p>
 <p><strong>Error</strong>: 0.029529 %</p>
-<p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <span class="xref myst">sp_dls_inversion_scratch.py</span> below. Jacobian matrix was calculated using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py">derrivatives_in_python.py</a>.</p>
+<p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/sources/scripts/sp_dls_inversion.py">sp_dls_inversion_scratch.py</a> below. Jacobian matrix was calculated using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py">derrivatives_in_python.py</a>.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -519,10 +553,10 @@ title="Print to PDF"
             <p class="prev-next-title"><span class="section-number">3.1. </span>Least Square (LS)</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../chap4/chap4.html" title="next page">
+    <a class='right-next' id="next-link" href="3-svd.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span><strong>Metaheuristics</strong></p>
+        <p class="prev-next-title"><span class="section-number">3.3. </span>Singular Value Decomposition (SVD)</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

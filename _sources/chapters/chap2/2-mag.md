@@ -1,4 +1,4 @@
-## Supervised Learning
+# Magnetik
 
 ```{contents}
 :local:

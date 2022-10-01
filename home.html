@@ -170,13 +170,32 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="chapters/chap2/1-mlgi-sp-case.html">
-     2.1. Kasus Self Potential (SP)
+    <a class="reference internal" href="chapters/chap2/1-grav.html">
+     2.1. Gaya Berat (Gravity)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="chapters/chap2/1-fwd_sp.html">
-     2.2. [Hands-On] Pemodelan Kedepan SP
+    <a class="reference internal" href="chapters/chap2/2-mag.html">
+     2.2. Magnetik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chap2/3-sp.html">
+     2.3. Self Potential (SP)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chap2/3-fwd_sp.html">
+     2.4. [
+     <em>
+      Hands-On
+     </em>
+     ] Pemodelan Kedepan SP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chap2/4-ip.html">
+     2.5. Induced Polarization (IP)
     </a>
    </li>
   </ul>
@@ -204,6 +223,11 @@ const thebe_selector_output = ".output, .cell_output"
      3.2. Levenberg Marquardt (LM)
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chap3/3-svd.html">
+     3.3. Singular Value Decomposition (SVD)
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -217,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="chapters/chap4/chap4.html">
    4.
    <strong>
-    Metaheuristics
+    Metaheuristik
    </strong>
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -227,18 +251,28 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chap4/0-mc.html">
+     4.1. Monte Carlo (MC)
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="chapters/chap4/1-sa.html">
-     4.1. Simulated Annealing (SA)
+     4.2. Simulated Annealing (SA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="chapters/chap4/2-vfsa.html">
-     4.2. Very Fast Simulated Annealing (VFSA)
+     4.3. Very Fast Simulated Annealing (VFSA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="chapters/chap4/3-pso.html">
-     4.3. Particle Swarm Optimization (PSO)
+     4.4. Particle Swarm Optimization (PSO)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapters/chap4/4-ga.html">
+     4.5. Genetic Algorithm (GA)
     </a>
    </li>
   </ul>
@@ -257,17 +291,17 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="chapters/chap5/1-supervised-learning.html">
+    <a class="reference internal" href="chapters/chap5/1-sl.html">
      5.1. Supervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="chapters/chap5/2-unsupervised-learning.html">
+    <a class="reference internal" href="chapters/chap5/2-ul.html">
      5.2. Unsupervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="chapters/chap5/3-neural-network.html">
+    <a class="reference internal" href="chapters/chap5/3-nn.html">
      5.3. Neural Network (NN)
     </a>
    </li>
@@ -521,9 +555,10 @@ title="Print to PDF"
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ezygeo-ai/mlgi" />
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ezygeo-ai/mlgi" />
 <a class="reference external" href="https://www.linkedin.com/company/28696953"><img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&amp;logo=linkedin&amp;colorB=555" /></a></p>
-<section id="hands-on-pembelajaran-mesin-untuk-inversi-geofisika">
+<section class="tex2jax_ignore mathjax_ignore" id="hands-on-pembelajaran-mesin-untuk-inversi-geofisika">
 <h1>🧑‍💻 <strong><em>Hands-On</em> Pembelajaran Mesin untuk Inversi Geofisika</strong><a class="headerlink" href="#hands-on-pembelajaran-mesin-untuk-inversi-geofisika" title="Permalink to this headline">#</a></h1>
 <p>Halaman muka dari kumpulan artikel terkait implementasi pembelajaran mesin (<em>machine learning</em>) untuk inversi geofisika.</p>
+<p><em>Hands-on</em> disini memakai bahasa pemograman <a class="reference external" href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/GNU_Octave">MATLAB (Octave)</a> dan <a class="reference external" href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a>.</p>
 <section id="daftar-isi">
 <h2><strong>Daftar isi</strong><a class="headerlink" href="#daftar-isi" title="Permalink to this headline">#</a></h2>
 <div class="toctree-wrapper compound">
@@ -540,13 +575,17 @@ title="Print to PDF"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapters/chap2/chap2.html">2. <strong>Pemodelan Kedepan</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="chapters/chap2/1-mlgi-sp-case.html">2.1. Kasus Self Potential (SP)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapters/chap2/1-fwd_sp.html">2.2. [Hands-On] Pemodelan Kedepan SP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap2/1-grav.html">2.1. Gaya Berat (Gravity)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap2/2-mag.html">2.2. Magnetik</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap2/3-sp.html">2.3. Self Potential (SP)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap2/3-fwd_sp.html">2.4. [<em>Hands-On</em>] Pemodelan Kedepan SP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap2/4-ip.html">2.5. Induced Polarization (IP)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapters/chap3/chap3.html">3. <strong>Pemodelan Inversi</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="chapters/chap3/1-ls.html">3.1. Least Square (LS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapters/chap3/2-lm.html">3.2. Levenberg Marquardt (LM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap3/3-svd.html">3.3. Singular Value Decomposition (SVD)</a></li>
 </ul>
 </li>
 </ul>
@@ -554,16 +593,18 @@ title="Print to PDF"
 <div class="toctree-wrapper compound">
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">🧠 Pendekatan Global</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="chapters/chap4/chap4.html">4. <strong>Metaheuristics</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="chapters/chap4/1-sa.html">4.1. Simulated Annealing (SA)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapters/chap4/2-vfsa.html">4.2. Very Fast Simulated Annealing (VFSA)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapters/chap4/3-pso.html">4.3. Particle Swarm Optimization (PSO)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapters/chap4/chap4.html">4. <strong>Metaheuristik</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap4/0-mc.html">4.1. Monte Carlo (MC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap4/1-sa.html">4.2. Simulated Annealing (SA)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap4/2-vfsa.html">4.3. Very Fast Simulated Annealing (VFSA)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap4/3-pso.html">4.4. Particle Swarm Optimization (PSO)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap4/4-ga.html">4.5. Genetic Algorithm (GA)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapters/chap5/chap5.html">5. <strong>Pembelajaran Mesin</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="chapters/chap5/1-supervised-learning.html">5.1. Supervised Learning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapters/chap5/2-unsupervised-learning.html">5.2. Unsupervised Learning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapters/chap5/3-neural-network.html">5.3. Neural Network (NN)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap5/1-sl.html">5.1. Supervised Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap5/2-ul.html">5.2. Unsupervised Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapters/chap5/3-nn.html">5.3. Neural Network (NN)</a></li>
 </ul>
 </li>
 </ul>

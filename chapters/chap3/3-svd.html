@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Singular Value Decomposition (SVD) &#8212; &lt;p&gt;&lt;i&gt;Hands-On&lt;/i&gt; Pembelajaran Mesin untuk Inversi Geofisika&lt;/p&gt;
+    <title>3.3. Singular Value Decomposition (SVD) &#8212; &lt;p&gt;&lt;i&gt;Hands-On&lt;/i&gt; Pembelajaran Mesin untuk Inversi Geofisika&lt;/p&gt;
 </title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -54,6 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4. Metaheuristik" href="../chap4/chap4.html" />
+    <link rel="prev" title="3.2. Levenberg Marquardt (LM)" href="2-lm.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -129,7 +131,7 @@ const thebe_selector_output = ".output, .cell_output"
   ♾️ Pendekatan Lokal
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../chap1/chap1.html">
    1.
@@ -169,30 +171,49 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap2/1-mlgi-sp-case.html">
-     2.1. Kasus Self Potential (SP)
+    <a class="reference internal" href="../chap2/1-grav.html">
+     2.1. Gaya Berat (Gravity)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap2/1-fwd_sp.html">
-     2.2. [Hands-On] Pemodelan Kedepan SP
+    <a class="reference internal" href="../chap2/2-mag.html">
+     2.2. Magnetik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/3-sp.html">
+     2.3. Self Potential (SP)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/3-fwd_sp.html">
+     2.4. [
+     <em>
+      Hands-On
+     </em>
+     ] Pemodelan Kedepan SP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/4-ip.html">
+     2.5. Induced Polarization (IP)
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="chap3.html">
    3.
    <strong>
     Pemodelan Inversi
    </strong>
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="1-ls.html">
      3.1. Least Square (LS)
@@ -201,6 +222,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="2-lm.html">
      3.2. Levenberg Marquardt (LM)
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     3.3. Singular Value Decomposition (SVD)
     </a>
    </li>
   </ul>
@@ -216,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chap4/chap4.html">
    4.
    <strong>
-    Metaheuristics
+    Metaheuristik
    </strong>
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -226,18 +252,28 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/0-mc.html">
+     4.1. Monte Carlo (MC)
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chap4/1-sa.html">
-     4.1. Simulated Annealing (SA)
+     4.2. Simulated Annealing (SA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chap4/2-vfsa.html">
-     4.2. Very Fast Simulated Annealing (VFSA)
+     4.3. Very Fast Simulated Annealing (VFSA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chap4/3-pso.html">
-     4.3. Particle Swarm Optimization (PSO)
+     4.4. Particle Swarm Optimization (PSO)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/4-ga.html">
+     4.5. Genetic Algorithm (GA)
     </a>
    </li>
   </ul>
@@ -256,17 +292,17 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/1-supervised-learning.html">
+    <a class="reference internal" href="../chap5/1-sl.html">
      5.1. Supervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/2-unsupervised-learning.html">
+    <a class="reference internal" href="../chap5/2-ul.html">
      5.2. Unsupervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/3-neural-network.html">
+    <a class="reference internal" href="../chap5/3-nn.html">
      5.3. Neural Network (NN)
     </a>
    </li>
@@ -469,8 +505,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="singular-value-decomposition-svd">
-<h1>Singular Value Decomposition (SVD)<a class="headerlink" href="#singular-value-decomposition-svd" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="singular-value-decomposition-svd">
+<h1><span class="section-number">3.3. </span>Singular Value Decomposition (SVD)<a class="headerlink" href="#singular-value-decomposition-svd" title="Permalink to this headline">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -500,6 +536,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="2-lm.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">3.2. </span>Levenberg Marquardt (LM)</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../chap4/chap4.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span><strong>Metaheuristik</strong></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

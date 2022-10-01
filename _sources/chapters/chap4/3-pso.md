@@ -1,4 +1,4 @@
-## Particle Swarm Optimization (PSO)
+# Particle Swarm Optimization (PSO)
 
 ```{contents}
 :local:

@@ -1,4 +1,4 @@
-## Very Fast Simulated Annealing (VFSA)
+# Very Fast Simulated Annealing (VFSA)
 
 ```{contents}
 :local:

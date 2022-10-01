@@ -14,7 +14,7 @@ kernelspec:
 ---
 
 
-# Kasus Self Potential (SP)
+# Self Potential (SP)
 
 ```{contents}
 :local:

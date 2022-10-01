@@ -1,4 +1,4 @@
-## Levenberg Marquardt (LM)
+# Levenberg Marquardt (LM)
 
 ```{contents}
 :local:
@@ -8,7 +8,7 @@
 
 I use DLS algorithm from [Kode Praktikum GP2103 Metode Komputasi versi Python](https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python) tutorial: [Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34](https://osf.io/36yh8/) and [pm6f.py](https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py) code. This result was showed using [sp_dls_inversion.py](https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_dls_inversion.py) below.
 
-```{figure} /figures/chap2/results/sp_dls_inv_result.png
+```{figure} /figures/chap3/results/sp_dls_inv_result.png
 ---
 name: sp_dls_inv_result
 ---
@@ -22,4 +22,4 @@ name: sp_dls_inv_result
 
 **Error**: 0.029529 %
 
-with research paper reference [W. Srigutomo, et al, 2016](http://ijphysics.com/index.php/ijp/article/view/138) that is modified [sp_dls_inversion_scratch.py]() below. Jacobian matrix was calculated using [derrivatives_in_python.py](https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py).
+with research paper reference [W. Srigutomo, et al, 2016](http://ijphysics.com/index.php/ijp/article/view/138) that is modified [sp_dls_inversion_scratch.py](https://github.com/ezygeo-ai/mlgi/blob/master/sources/scripts/sp_dls_inversion.py) below. Jacobian matrix was calculated using [derrivatives_in_python.py](https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py).

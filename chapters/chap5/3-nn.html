@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>2.1. Kasus Self Potential (SP) &#8212; &lt;p&gt;&lt;i&gt;Hands-On&lt;/i&gt; Pembelajaran Mesin untuk Inversi Geofisika&lt;/p&gt;
+    <title>5.3. Neural Network (NN) &#8212; &lt;p&gt;&lt;i&gt;Hands-On&lt;/i&gt; Pembelajaran Mesin untuk Inversi Geofisika&lt;/p&gt;
 </title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -54,8 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2.2. [Hands-On] Pemodelan Kedepan SP" href="1-fwd_sp.html" />
-    <link rel="prev" title="2. Pemodelan Kedepan" href="chap2.html" />
+    <link rel="prev" title="5.2. Unsupervised Learning" href="2-ul.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -131,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
   ♾️ Pendekatan Lokal
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../chap1/chap1.html">
    1.
@@ -157,27 +156,46 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="chap2.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chap2/chap2.html">
    2.
    <strong>
     Pemodelan Kedepan
    </strong>
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     2.1. Kasus Self Potential (SP)
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/1-grav.html">
+     2.1. Gaya Berat (Gravity)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="1-fwd_sp.html">
-     2.2. [Hands-On] Pemodelan Kedepan SP
+    <a class="reference internal" href="../chap2/2-mag.html">
+     2.2. Magnetik
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/3-sp.html">
+     2.3. Self Potential (SP)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/3-fwd_sp.html">
+     2.4. [
+     <em>
+      Hands-On
+     </em>
+     ] Pemodelan Kedepan SP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap2/4-ip.html">
+     2.5. Induced Polarization (IP)
     </a>
    </li>
   </ul>
@@ -205,6 +223,11 @@ const thebe_selector_output = ".output, .cell_output"
      3.2. Levenberg Marquardt (LM)
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap3/3-svd.html">
+     3.3. Singular Value Decomposition (SVD)
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -213,12 +236,12 @@ const thebe_selector_output = ".output, .cell_output"
   🧠 Pendekatan Global
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../chap4/chap4.html">
    4.
    <strong>
-    Metaheuristics
+    Metaheuristik
    </strong>
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -228,47 +251,57 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/0-mc.html">
+     4.1. Monte Carlo (MC)
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chap4/1-sa.html">
-     4.1. Simulated Annealing (SA)
+     4.2. Simulated Annealing (SA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chap4/2-vfsa.html">
-     4.2. Very Fast Simulated Annealing (VFSA)
+     4.3. Very Fast Simulated Annealing (VFSA)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chap4/3-pso.html">
-     4.3. Particle Swarm Optimization (PSO)
+     4.4. Particle Swarm Optimization (PSO)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chap4/4-ga.html">
+     4.5. Genetic Algorithm (GA)
     </a>
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../chap5/chap5.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="chap5.html">
    5.
    <strong>
     Pembelajaran Mesin
    </strong>
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/1-supervised-learning.html">
+    <a class="reference internal" href="1-sl.html">
      5.1. Supervised Learning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/2-unsupervised-learning.html">
+    <a class="reference internal" href="2-ul.html">
      5.2. Unsupervised Learning
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chap5/3-neural-network.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      5.3. Neural Network (NN)
     </a>
    </li>
@@ -326,35 +359,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/ezygeo-ai/mlgi/master?urlpath=tree/chapters/chap2/1-mlgi-sp-case.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="../../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -394,7 +398,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap2/1-mlgi-sp-case.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/ezygeo-ai/mlgi/issues/new?title=Issue%20on%20page%20%2Fchapters/chap5/3-nn.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -411,7 +415,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap2/1-mlgi-sp-case.md"
+        <a href="https://github.com/ezygeo-ai/mlgi/edit/master/chapters/chap5/3-nn.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -439,24 +443,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/chapters/chap2/1-mlgi-sp-case.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download notebook file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="../../_sources/chapters/chap2/1-mlgi-sp-case.md"
+        <a href="../../_sources/chapters/chap5/3-nn.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -505,7 +492,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Kasus Self Potential (SP)</h1>
+                <h1>Neural Network (NN)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -517,16 +504,19 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="kasus-self-potential-sp">
-<h1><span class="section-number">2.1. </span>Kasus Self Potential (SP)<a class="headerlink" href="#kasus-self-potential-sp" title="Permalink to this headline">#</a></h1>
-<p>The purpose of this repository is to reconstruct paper from Y. Kim and N. Nakata (The Leading Edge, Volume 37, Issue 12, Dec 2018) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle37120894.1">Geophysical inversion versus machine learning in inverse problems</a> and B. Russel (The Leading Edge, Volume 38, Issue 7, Jul 2019) about <a class="reference external" href="https://library.seg.org/doi/10.1190/tle38070512.1">Machine learning and geophysical inversion — A numerical study</a>.</p>
-<p>Reference: Inversion of Self Potential Anomalies with Multilayer Perceptron Neural Networks <a class="reference external" href="https://link.springer.com/article/10.1007/s00024-014-0778-y">Ilknur Kaftan et. al, 2014, Pure Appl. Geophys</a>
-Syntethic data was created from sphere model (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/fwd_sp.py">fwd_sp.py</a>) with parameters K = 94,686, h = 41.81 m, alpha = 309.37, dan x0 = 77.07 m. This result can be downloaded <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_syn_data.pickle">here</a> and seen below with noise distribution.</p>
-<figure class="align-default" id="syntethic-data">
-<img alt="../../_images/syntethic_data.png" src="../../_images/syntethic_data.png" />
+  <section class="tex2jax_ignore mathjax_ignore" id="neural-network-nn">
+<h1><span class="section-number">5.3. </span>Neural Network (NN)<a class="headerlink" href="#neural-network-nn" title="Permalink to this headline">#</a></h1>
+<p><ins><strong>Machine Learning: Multilayer Perceptron Neural Networks (MLP)</strong></ins></p>
+<p>Self-Potential Dataset that was generated with 5,000 different spherical models (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_make_dataset.py">sp_make_dataset.py</a>) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_Dataset.pickle">here</a> and seen below (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_show_dataset.py">sp_show_dataset.py</a>). This dataset contains training (<strong>80%</strong>) dan validation (<strong>20%</strong>) dataset.</p>
+<figure class="align-default" id="training-dataset">
+<img alt="../../_images/training_dataset.png" src="../../_images/training_dataset.png" />
 </figure>
-<figure class="align-default" id="noise-distribution">
-<img alt="../../_images/noise_distribution.png" src="../../_images/noise_distribution.png" />
+<figure class="align-default" id="validation-dataset">
+<img alt="../../_images/validation_dataset.png" src="../../_images/validation_dataset.png" />
+</figure>
+<p>This MLPNN used two (2) hidden layers, input layer used 101 point of data (neurons), first layer used 2 neurons and second layer used five (5) neurons. Then, learning rate = 0.1, activation function = hyperbolic tangent sigmoid function. The final MSE = 0.00306092 from 150 epochs.</p>
+<figure class="align-default" id="mlp">
+<img alt="../../_images/mlp.png" src="../../_images/mlp.png" />
 </figure>
 </section>
 
@@ -543,7 +533,7 @@ Syntethic data was created from sphere model (using <a class="reference external
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./chapters/chap2"
+            path: "./chapters/chap5"
         },
         predefinedOutput: true
     }
@@ -557,19 +547,12 @@ Syntethic data was created from sphere model (using <a class="reference external
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="chap2.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="2-ul.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2. </span><strong>Pemodelan Kedepan</strong></p>
+            <p class="prev-next-title"><span class="section-number">5.2. </span>Unsupervised Learning</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="1-fwd_sp.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2.2. </span>[Hands-On] Pemodelan Kedepan SP</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
