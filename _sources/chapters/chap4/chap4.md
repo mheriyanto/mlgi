@@ -1,8 +1,5 @@
 # **Metaheuristics**
 
-```{tableofcontents}
-```
-
 ```{contents}
 :local:
 ```
