@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2.2. Hands-On Kasus Self Potential (SP)" href="1-fwd_sp.html" />
+    <link rel="next" title="2.2. [Hands-On] Pemodelan Kedepan SP" href="1-fwd_sp.html" />
     <link rel="prev" title="2. Pemodelan Kedepan" href="chap2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -177,7 +177,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="1-fwd_sp.html">
-     2.2. Hands-On Kasus Self Potential (SP)
+     2.2. [Hands-On] Pemodelan Kedepan SP
     </a>
    </li>
   </ul>
@@ -528,28 +528,6 @@ Syntethic data was created from sphere model (using <a class="reference external
 <figure class="align-default" id="noise-distribution">
 <img alt="../../_images/noise_distribution.png" src="../../_images/noise_distribution.png" />
 </figure>
-<p><ins><strong>Geophysical Inversion: Damped Least Squares (Levenberg–Marquardt) inversion (DLS)</strong></ins></p>
-<p>I use DLS algorithm from <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python">Kode Praktikum GP2103 Metode Komputasi versi Python</a> tutorial: <a class="reference external" href="https://osf.io/36yh8/">Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34</a> and <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py">pm6f.py</a> code. This result was showed using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_dls_inversion.py">sp_dls_inversion.py</a> below.</p>
-<figure class="align-default" id="sp-dls-inv-result">
-<img alt="../../_images/sp_dls_inv_result.png" src="../../_images/sp_dls_inv_result.png" />
-</figure>
-<p><strong>Initial Model</strong> x0: 20 | alpha: 100 (deg) | h: 40 | K: 94500</p>
-<p><strong>Real Model</strong> x0: 77.070000 | alpha: 5.399525 (rad) | h: 41.810000 | K: 94686.000000</p>
-<p><strong>Inversion Model</strong> x0: 76.243426 | alpha: 5.415794 (rad) | h: 42.776603 | K: 99102.106072</p>
-<p><strong>Error</strong>: 0.029529 %</p>
-<p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <span class="xref myst">sp_dls_inversion_scratch.py</span> below. Jacobian matrix was calculated using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py">derrivatives_in_python.py</a>.</p>
-<p><ins><strong>Machine Learning: Multilayer Perceptron Neural Networks (MLP)</strong></ins></p>
-<p>Self-Potential Dataset that was generated with 5,000 different spherical models (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_make_dataset.py">sp_make_dataset.py</a>) with differing electrical dipole moment, polarization angle, origin and depth to the centre of sphere <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/data/SP_Dataset.pickle">here</a> and seen below (using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_show_dataset.py">sp_show_dataset.py</a>). This dataset contains training (<strong>80%</strong>) dan validation (<strong>20%</strong>) dataset.</p>
-<figure class="align-default" id="training-dataset">
-<img alt="../../_images/training_dataset.png" src="../../_images/training_dataset.png" />
-</figure>
-<figure class="align-default" id="validation-dataset">
-<img alt="../../_images/validation_dataset.png" src="../../_images/validation_dataset.png" />
-</figure>
-<p>This MLPNN used two (2) hidden layers, input layer used 101 point of data (neurons), first layer used 2 neurons and second layer used five (5) neurons. Then, learning rate = 0.1, activation function = hyperbolic tangent sigmoid function. The final MSE = 0.00306092 from 150 epochs.</p>
-<figure class="align-default" id="mlp">
-<img alt="../../_images/mlp.png" src="../../_images/mlp.png" />
-</figure>
 </section>
 
     <script type="text/x-thebe-config">
@@ -589,7 +567,7 @@ Syntethic data was created from sphere model (using <a class="reference external
     <a class='right-next' id="next-link" href="1-fwd_sp.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2.2. </span>Hands-On Kasus Self Potential (SP)</p>
+        <p class="prev-next-title"><span class="section-number">2.2. </span>[Hands-On] Pemodelan Kedepan SP</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

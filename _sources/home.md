@@ -9,7 +9,7 @@
 
 Halaman muka dari kumpulan artikel terkait implementasi pembelajaran mesin (*machine learning*) untuk inversi geofisika.
 
-## **Daftar isi**
+### **Daftar isi**
 
 ```{tableofcontents}
 ```
