@@ -1,4 +1,4 @@
-# **Pemodelan Inversi**
+## **Pemodelan Inversi**
 
 ```{tableofcontents}
 ```

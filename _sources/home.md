@@ -5,11 +5,11 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/ezygeo-ai/mlgi)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555)](https://www.linkedin.com/company/28696953)
 
-# *Hands-On* Pembelajaran Mesin untuk Inversi Geofisika
+## 🧑‍💻 ***Hands-On* Pembelajaran Mesin untuk Inversi Geofisika**
 
-Berikut ini adalah halaman muka dari kumpulan artikel terkait implementasi pembelajaran mesin untuk inversi geofisika
+Halaman muka dari kumpulan artikel terkait implementasi pembelajaran mesin (*machine learning*) untuk inversi geofisika.
 
-**Daftar isi**
+## **Daftar isi**
 
 ```{tableofcontents}
 ```

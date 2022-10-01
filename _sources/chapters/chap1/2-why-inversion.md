@@ -1,4 +1,4 @@
-# Kenapa Perlu Inversi?
+## Kenapa Perlu Inversi?
 
 Berikut ini perbedaan ketika data pengukuran diinterpretasi secara kualutatif dengan kuantitif.
 

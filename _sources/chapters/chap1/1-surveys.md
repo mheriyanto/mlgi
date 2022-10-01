@@ -1,4 +1,4 @@
-# Pengukuran Geofisika
+## Pengukuran Geofisika
 > Diperbarui: Minggu, 6 November 2016 
 
 Beberapa pengukuran metode geofisika yang umum dilakukan: gravity, magnetik, seismik refraksi, seismik refleksi, dc listrik, spontaneous potential, induced polarization, electromagnetik (EM), EM - very low frequency, EM - ground penetrating radar, magnetotellurik dan lain-lain.

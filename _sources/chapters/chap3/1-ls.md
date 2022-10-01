@@ -1,4 +1,4 @@
-# Least Square (LS)
+## Least Square (LS)
 
 ```{contents}
 :local:

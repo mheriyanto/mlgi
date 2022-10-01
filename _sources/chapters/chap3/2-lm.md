@@ -1,4 +1,4 @@
-# Levenberg Marquardt (LM)
+## Levenberg Marquardt (LM)
 
 ```{contents}
 :local:

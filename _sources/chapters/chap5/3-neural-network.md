@@ -1,4 +1,4 @@
-# Neural Network (NN)
+## Neural Network (NN)
 
 ```{contents}
 :local:
