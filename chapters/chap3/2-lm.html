@@ -317,7 +317,7 @@ const thebe_selector_output = ".output, .cell_output"
              <!-- To handle the deprecated key -->
             
             <div class="navbar_extra_footer">
-            <a href="https://mheriyanto.dev"><img src="https://raw.githubusercontent.com/mheriyanto/mheriyanto.github.io/master/assets/images/mh-logo.png" height="45" width="45" title="mheriyanto"></a> <a href="https://ezygeo.github.io"><img src="https://raw.githubusercontent.com/mheriyanto/mheriyanto.github.io/master/assets/logos/ezygeo.png" height="45" width="45" title="ezygeo"></a> </br> </br> <a href="https://doi.org/10.5281/zenodo.1807591"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1807591.svg" alt="DOI"></a></br> <a href="https://github.com/ezygeo-ai/mlgi/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ezygeo-ai/mlgi.svg" alt="Licence"></a>
+            <a href="https://mheriyanto.dev"><img src="https://raw.githubusercontent.com/mheriyanto/mheriyanto.github.io/master/assets/images/mh-logo.png" height="45" width="45" title="mheriyanto"></a> <a href="https://ezygeo.github.io"><img src="https://raw.githubusercontent.com/mheriyanto/mheriyanto.github.io/master/assets/logos/ezygeo.png" height="45" width="45" title="ezygeo"></a> </br></br> <a href="https://doi.org/10.5281/zenodo.1807591"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1807591.svg" alt="DOI"></a></br> <a href="https://github.com/ezygeo-ai/mlgi/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ezygeo-ai/mlgi.svg" alt="Licence"></a> </br> <a href="https://www.hitwebcounter.com" target="_blank"><img src="https://hitwebcounter.com/counter/counter.php?page=8045874&style=0006&nbdigits=5&type=page&initCount=0" title="visitor" Alt="web-counter" border="0"/></a> 
 
             </div>
             
@@ -509,7 +509,7 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="levenberg-marquardt-lm">
 <h1><span class="section-number">3.2. </span>Levenberg Marquardt (LM)<a class="headerlink" href="#levenberg-marquardt-lm" title="Permalink to this headline">#</a></h1>
 <p><ins><strong>Geophysical Inversion: Damped Least Squares (Levenberg–Marquardt) inversion (DLS)</strong></ins></p>
-<p>I use DLS algorithm from <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python">Kode Praktikum GP2103 Metode Komputasi versi Python</a> tutorial: <a class="reference external" href="https://osf.io/36yh8/">Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34</a> and <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py">pm6f.py</a> code. This result was showed using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/sp_dls_inversion.py">sp_dls_inversion.py</a> below.</p>
+<p>I use DLS algorithm from <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python">Kode Praktikum GP2103 Metode Komputasi versi Python</a> tutorial: <a class="reference external" href="https://osf.io/36yh8/">Modul 6 - Metode Komputasi 2018 - GP UP.pdf, page 34</a> and <a class="reference external" href="https://github.com/Metkom/Kode-Praktikum-GP2103-Metode-Komputasi-versi-Python/blob/master/pm6f.py">pm6f.py</a> code. This result was showed using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/python/sp_dls_inversion.py">sp_dls_inversion.py</a> below.</p>
 <figure class="align-default" id="sp-dls-inv-result">
 <img alt="../../_images/sp_dls_inv_result.png" src="../../_images/sp_dls_inv_result.png" />
 </figure>
@@ -517,7 +517,7 @@ title="Print to PDF"
 <p><strong>Real Model</strong> x0: 77.070000 | alpha: 5.399525 (rad) | h: 41.810000 | K: 94686.000000</p>
 <p><strong>Inversion Model</strong> x0: 76.243426 | alpha: 5.415794 (rad) | h: 42.776603 | K: 99102.106072</p>
 <p><strong>Error</strong>: 0.029529 %</p>
-<p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/sources/scripts/sp_dls_inversion.py">sp_dls_inversion_scratch.py</a> below. Jacobian matrix was calculated using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/scripts/derrivatives_in_python.py">derrivatives_in_python.py</a>.</p>
+<p>with research paper reference <a class="reference external" href="http://ijphysics.com/index.php/ijp/article/view/138">W. Srigutomo, et al, 2016</a> that is modified <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/sources/python/sp_dls_inversion.py">sp_dls_inversion_scratch.py</a> below. Jacobian matrix was calculated using <a class="reference external" href="https://github.com/ezygeo-ai/mlgi/blob/master/python/derrivatives_in_python.py">derrivatives_in_python.py</a>.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -568,14 +568,10 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By <a href="mailto:mheriyanto37@gmail.com">M. Heriyanto</a>, <a href="https://ezygeo.github.io">ezygeo</a>, Jakarta, Indonesia
+    By <a href="mailto:mheriyanto37@gmail.com">M. Heriyanto</a>, <a href="https://ezygeo.github.io">ezygeo</a>, Jakarta, Indonesia. <a href="https://choosealicense.com/licenses/mit">MIT License</a>.
 <br/>
   
       &copy; Copyright 2016–2022.<br/>
-    <div class="extra_footer">
-      <p> This work is licenced under the <a href="https://choosealicense.com/licenses/mit">MIT License</a>. </p>
-
-    </div>
 </p>
         </footer>
     </div>
