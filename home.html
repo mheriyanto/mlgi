@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,6 +41,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/tabs.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -61,6 +64,14 @@ const thebe_selector_output = ".output, .cell_output"
 
     <!-- Google Analytics -->
     
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0K9CQ7SY8W"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-0K9CQ7SY8W');
+                </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
@@ -74,7 +85,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">News: buku berbasis web ini sedang dalam tahap development.</div>
+<div class="announcement header-item noprint"><span>&#9888;&#65039;</span> News: buku berbasis web ini sedang dalam tahap development! <span>&#9888;&#65039;</span></div>
 <div class="header header-item noprint"></div>
 
     
@@ -556,12 +567,12 @@ title="Print to PDF"
 <h1>🧑‍💻 <strong><em>Hands-On</em> Pembelajaran Mesin untuk Inversi Geofisika</strong><a class="headerlink" href="#hands-on-pembelajaran-mesin-untuk-inversi-geofisika" title="Permalink to this headline">#</a></h1>
 <p>Halaman muka dari kumpulan artikel terkait implementasi pembelajaran mesin (<em>machine learning</em>) untuk inversi geofisika.</p>
 <p><em>Hands-on</em> disini memakai bahasa pemograman <a class="reference external" href="https://en.wikipedia.org/wiki/Python_(programming_language)"><strong>Python</strong></a>, <a class="reference external" href="https://en.wikipedia.org/wiki/GNU_Octave"><strong>MATLAB (Octave)</strong></a> dan <a class="reference external" href="https://en.wikipedia.org/wiki/C%2B%2B"><strong>C++</strong></a>.</p>
-<p align="center">
+<div align="center">
   <code><a href="https://www.python.org" target="_blank"><img title="python" height="40" width="40" src="https://www.svgrepo.com/show/374016/python.svg"></a></code>
   <code><a href="https://octave.org" target="_blank"><img title="octave" height="40" width="40" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Gnu-octave-logo.svg"></a></code> 
   <code><a href="https://www.mathworks.com/products/matlab.html" target="_blank"><img title="matlab" height="40" width="40" src="https://www.svgrepo.com/show/373830/matlab.svg"></a></code>  
   <code><a href="https://en.cppreference.com/w/" target="_blank"><img title="c++" height="40" width="40" src="https://www.svgrepo.com/show/303480/c-logo.svg"></a></code>
-</p>
+</div>
 <section id="daftar-isi">
 <h2><strong>Daftar isi</strong><a class="headerlink" href="#daftar-isi" title="Permalink to this headline">#</a></h2>
 <div class="toctree-wrapper compound">
@@ -624,30 +635,24 @@ title="Print to PDF"
 <p>Program dalam bahasa MATLAB (<strong>berbayar</strong>) bisa dijalankan dengan compiler Octave (<strong>gratis</strong>), sehingga dalam buku ini <em>keyword</em> MATLAB akan dituliskan sebagai <strong>Octave</strong>.</p>
 </div>
 <p><strong>Instalasi <em>environment</em> (Linux Ubuntu) dan menjalankan program</strong></p>
-<div class="sd-tab-set docutils">
-<input checked="checked" id="4d2ea4a4-9c27-4296-a648-ff5d962ae9e3" name="00530e49-ba6a-484b-b3ee-fe238b8d1700" type="radio">
-</input><label class="sd-tab-label" data-sync-id="tabcode-python" for="4d2ea4a4-9c27-4296-a648-ff5d962ae9e3">
-PYTHON</label><div class="sd-tab-content docutils">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">fwd_gravity</span><span class="o">.</span><span class="n">py</span>
+<div class="tab-set docutils">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">python</label><div class="tab-content docutils">
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python3 fwd_gravity.py</span>
 </pre></div>
 </div>
 </div>
-<input id="d8881f18-279a-40c4-8cfc-7deda78bd983" name="00530e49-ba6a-484b-b3ee-fe238b8d1700" type="radio">
-</input><label class="sd-tab-label" data-sync-id="tabcode-octave" for="d8881f18-279a-40c4-8cfc-7deda78bd983">
-OCTAVE</label><div class="sd-tab-content docutils">
-<div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">gcc</span> <span class="n">g</span><span class="o">++</span> <span class="n">gfortran</span> <span class="n">make</span> 
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">libopenblas</span><span class="o">-</span><span class="n">dev</span> <span class="n">liblapack</span><span class="o">-</span><span class="n">dev</span> <span class="n">libpcre3</span><span class="o">-</span><span class="n">dev</span> <span class="n">libarpack2</span><span class="o">-</span><span class="n">dev</span> <span class="n">libcurl4</span><span class="o">-</span><span class="n">gnutls</span><span class="o">-</span><span class="n">dev</span> <span class="n">epstool</span> <span class="n">libfftw3</span><span class="o">-</span><span class="n">dev</span> <span class="n">fig2dev</span> <span class="n">libfltk1</span><span class="p">.</span><span class="mi">3</span><span class="o">-</span><span class="n">dev</span> <span class="n">libfontconfig1</span><span class="o">-</span><span class="n">dev</span> <span class="n">libfreetype6</span><span class="o">-</span><span class="n">dev</span> <span class="n">libgl2ps</span><span class="o">-</span><span class="n">dev</span> <span class="n">libglpk</span><span class="o">-</span><span class="n">dev</span> <span class="n">libreadline</span><span class="o">-</span><span class="n">dev</span> <span class="n">gnuplot</span><span class="o">-</span><span class="n">x11</span> <span class="n">libgraphicsmagick</span><span class="o">++</span><span class="mi">1</span><span class="o">-</span><span class="n">dev</span> <span class="n">libhdf5</span><span class="o">-</span><span class="n">dev</span> <span class="n">openjdk</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="n">jdk</span> <span class="n">libsndfile1</span><span class="o">-</span><span class="n">dev</span> 
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">llvm</span><span class="o">-</span><span class="n">dev</span> <span class="n">texinfo</span> <span class="n">libgl1</span><span class="o">-</span><span class="n">mesa</span><span class="o">-</span><span class="n">dev</span> <span class="n">pstoedit</span> <span class="n">portaudio19</span><span class="o">-</span><span class="n">dev</span> <span class="n">libqhull</span><span class="o">-</span><span class="n">dev</span> <span class="n">libqrupdate</span><span class="o">-</span><span class="n">dev</span> <span class="n">libsuitesparse</span><span class="o">-</span><span class="n">dev</span> <span class="n">texlive</span><span class="o">-</span><span class="n">latex</span><span class="o">-</span><span class="n">extra</span> <span class="n">libxft</span><span class="o">-</span><span class="n">dev</span> <span class="n">zlib1g</span><span class="o">-</span><span class="n">dev</span> <span class="n">autoconf</span> <span class="n">automake</span> <span class="n">bison</span> <span class="n">flex</span> <span class="n">gperf</span> <span class="nb">gzip</span> <span class="n">icoutils</span> <span class="n">librsvg2</span><span class="o">-</span><span class="n">bin</span> <span class="n">libtool</span> <span class="nb">perl</span> <span class="n">rsync</span> <span class="nb">tar</span> 
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">qtbase5</span><span class="o">-</span><span class="n">dev</span> <span class="n">qttools5</span><span class="o">-</span><span class="n">dev</span> <span class="n">qttools5</span><span class="o">-</span><span class="n">dev</span><span class="o">-</span><span class="n">tools</span> <span class="n">libqscintilla2</span><span class="o">-</span><span class="n">qt5</span><span class="o">-</span><span class="n">dev</span> <span class="n">libsundials</span><span class="o">-</span><span class="n">dev</span> <span class="n">rapidjson</span><span class="o">-</span><span class="n">dev</span>
-<span class="n">octave</span> <span class="n">fwd_gravity</span><span class="p">.</span><span class="n">m</span>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">octave</label><div class="tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo apt-get install gcc g++ gfortran make 
+sudo apt-get install libopenblas-dev liblapack-dev libpcre3-dev libarpack2-dev libcurl4-gnutls-dev epstool libfftw3-dev fig2dev libfltk1.3-dev libfontconfig1-dev libfreetype6-dev libgl2ps-dev libglpk-dev libreadline-dev gnuplot-x11 libgraphicsmagick++1-dev libhdf5-dev openjdk-11-jdk libsndfile1-dev 
+sudo apt-get install llvm-dev texinfo libgl1-mesa-dev pstoedit portaudio19-dev libqhull-dev libqrupdate-dev libsuitesparse-dev texlive-latex-extra libxft-dev zlib1g-dev autoconf automake bison flex gperf gzip icoutils librsvg2-bin libtool perl rsync tar 
+sudo apt-get install qtbase5-dev qttools5-dev qttools5-dev-tools libqscintilla2-qt5-dev libsundials-dev rapidjson-dev
+octave fwd_gravity.m
 </pre></div>
 </div>
 </div>
-<input id="10237694-8716-4bad-bca0-8e9b23ea5539" name="00530e49-ba6a-484b-b3ee-fe238b8d1700" type="radio">
-</input><label class="sd-tab-label" data-sync-id="tabcode-c++" for="10237694-8716-4bad-bca0-8e9b23ea5539">
-C++</label><div class="sd-tab-content docutils">
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">++</span><span class="w"> </span><span class="n">fwd_gravity</span><span class="p">.</span><span class="n">cpp</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">fwd_gravity</span><span class="w"></span>
-<span class="p">.</span><span class="o">/</span><span class="n">fwd_gravity</span><span class="w"></span>
+<input class="tab-input" id="tab-set--0-input--3" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--3">c++</label><div class="tab-content docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>g++ fwd_gravity.cpp -o fwd_gravity
+./fwd_gravity
 </pre></div>
 </div>
 </div>

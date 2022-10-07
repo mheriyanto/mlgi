@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,6 +41,7 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/tabs.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -62,6 +65,14 @@ const thebe_selector_output = ".output, .cell_output"
 
     <!-- Google Analytics -->
     
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0K9CQ7SY8W"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-0K9CQ7SY8W');
+                </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
 <!-- Checkboxes to toggle the left sidebar -->
@@ -75,7 +86,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint">News: buku berbasis web ini sedang dalam tahap development.</div>
+<div class="announcement header-item noprint"><span>&#9888;&#65039;</span> News: buku berbasis web ini sedang dalam tahap development! <span>&#9888;&#65039;</span></div>
 <div class="header header-item noprint"></div>
 
     
@@ -496,8 +507,8 @@ title="Print to PDF"
 </div></blockquote>
 <p>Program awalnya dibuat dalam bahasa Octave <span id="id1">[<a class="reference internal" href="../bibliography.html#id13" title="Mohammad Heriyanto. Latihan Pemodelan Sederhana Metode Gaya Berat (Gravity). 4 2017. URL: https://figshare.com/articles/dataset/Latihan_Pemodelan_Sederhana_Metode_Gaya_Berat_Gravity_/4811485, doi:10.6084/m9.figshare.4811485.v1.">Heriyanto, 2017</a>]</span>, kemudian dituliskan juga dalam Python dan C++.</p>
 <div class="sd-tab-set docutils">
-<input checked="checked" id="b2ad70d9-6d69-4d55-853b-73f2a62ae163" name="41f66cc8-ac28-4a61-942a-4b8759dceb35" type="radio">
-</input><label class="sd-tab-label" data-sync-id="tabcode-python" for="b2ad70d9-6d69-4d55-853b-73f2a62ae163">
+<input checked="checked" id="0a1ecb27-b183-4de6-bff5-aa62dcb08a46" name="7e677a8c-90d8-4774-8b8d-f352f706b51d" type="radio">
+</input><label class="sd-tab-label" data-sync-id="tabcode-python" for="0a1ecb27-b183-4de6-bff5-aa62dcb08a46">
 PYTHON</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rho</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">R</span> <span class="o">=</span> <span class="mi">10</span>
@@ -514,8 +525,8 @@ PYTHON</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="5016c9c3-15f7-4432-ae34-84ff37964335" name="41f66cc8-ac28-4a61-942a-4b8759dceb35" type="radio">
-</input><label class="sd-tab-label" data-sync-id="tabcode-octave" for="5016c9c3-15f7-4432-ae34-84ff37964335">
+<input id="c284c4e5-a8a8-4693-857a-78fbd200a00a" name="7e677a8c-90d8-4774-8b8d-f352f706b51d" type="radio">
+</input><label class="sd-tab-label" data-sync-id="tabcode-octave" for="c284c4e5-a8a8-4693-857a-78fbd200a00a">
 OCTAVE</label><div class="sd-tab-content docutils">
 <div class="highlight-octave notranslate"><div class="highlight"><pre><span></span><span class="nb">clc</span><span class="p">;</span> <span class="n">clear</span> <span class="nb">all</span><span class="p">;</span> <span class="nb">close</span> <span class="nb">all</span><span class="p">;</span>
 <span class="n">rho</span> <span class="p">=</span> <span class="mi">1</span><span class="p">;</span>
@@ -534,8 +545,8 @@ OCTAVE</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="ad09602b-abf4-4dc5-97cd-4ab172ec7ca3" name="41f66cc8-ac28-4a61-942a-4b8759dceb35" type="radio">
-</input><label class="sd-tab-label" data-sync-id="tabcode-c++" for="ad09602b-abf4-4dc5-97cd-4ab172ec7ca3">
+<input id="7ebc99d8-a5d3-4869-a9e9-01cd3b40c9dc" name="7e677a8c-90d8-4774-8b8d-f352f706b51d" type="radio">
+</input><label class="sd-tab-label" data-sync-id="tabcode-c++" for="7ebc99d8-a5d3-4869-a9e9-01cd3b40c9dc">
 C++</label><div class="sd-tab-content docutils">
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 
